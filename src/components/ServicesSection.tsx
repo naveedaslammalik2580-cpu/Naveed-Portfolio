@@ -24,8 +24,8 @@ const SERVICES = [
   },
 ];
 
-// ⚠️ Put a vertical/portrait image at public/services.jpg and set the path here:
-const SERVICES_IMAGE = "/services.jpg"; // e.g. "/services.jpg"
+// ⚠️ Put a vertical/portrait image at public/services.webp and set the path here:
+const SERVICES_IMAGE = "/services.webp";
 
 export default function ServicesSection() {
   return (

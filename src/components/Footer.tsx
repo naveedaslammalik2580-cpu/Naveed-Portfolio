@@ -57,7 +57,7 @@ export default function Footer() {
       <div
         className="pointer-events-none absolute inset-0 z-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: "url('/footer-bg.jpg')",
+          backgroundImage: "url('/footer-bg.webp')",
           backgroundPosition: "center 85%",
         }}
         aria-hidden="true"

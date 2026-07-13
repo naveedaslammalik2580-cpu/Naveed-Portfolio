@@ -8,8 +8,8 @@ type AnimatedTextProps = {
 };
 
 /**
- * Reveals text one character at a time as the paragraph scrolls through the
- * viewport. Each character fades from 0.2 -> 1 opacity based on its position
+ * Reveals text one word at a time as the paragraph scrolls through the
+ * viewport. Each word fades from 0.2 -> 1 opacity based on its position
  * in the string relative to overall scroll progress.
  */
 export default function AnimatedText({ text, className, style }: AnimatedTextProps) {
@@ -19,24 +19,27 @@ export default function AnimatedText({ text, className, style }: AnimatedTextPro
     offset: ["start 0.8", "end 0.2"],
   });
 
-  const chars = text.split("");
+  const words = text.split(" ");
 
   return (
     <p ref={ref} className={className} style={style}>
-      {chars.map((char, i) => {
-        const start = i / chars.length;
-        const end = start + 1 / chars.length;
+      {words.map((word, i) => {
+        const start = i / words.length;
+        const end = start + 1 / words.length;
         return (
-          <Char key={i} progress={scrollYProgress} range={[start, end]}>
-            {char}
-          </Char>
+          <span key={i}>
+            <Word progress={scrollYProgress} range={[start, end]}>
+              {word}
+            </Word>
+            {i < words.length - 1 ? " " : ""}
+          </span>
         );
       })}
     </p>
   );
 }
 
-function Char({
+function Word({
   children,
   progress,
   range,

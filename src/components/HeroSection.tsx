@@ -173,6 +173,8 @@ function Globe() {
     let globe: ReturnType<typeof createGlobe> | null = null;
     let frameId = 0;
     let rebuildTimer: ReturnType<typeof setTimeout> | null = null;
+    let visible = true;
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
 
     const buildGlobe = () => {
       if (width <= 0) return;
@@ -181,14 +183,14 @@ function Globe() {
         globe = null;
       }
       globe = createGlobe(canvas, {
-        devicePixelRatio: 2,
-        width: width * 2,
-        height: width * 2,
+        devicePixelRatio: dpr,
+        width: width * dpr,
+        height: width * dpr,
         phi: 0,
         theta: 0.25,
         dark: 1,
         diffuse: 1.2,
-        mapSamples: 24000,
+        mapSamples: 16000,
         mapBrightness: 13,
         baseColor: [0.09, 0.11, 0.15],
         markerColor: [0.75, 0.85, 1],
@@ -213,12 +215,21 @@ function Globe() {
     ro.observe(canvas);
     measure(); // attempt an immediate measure in case size is already known
 
+    // Only render while the hero is actually scrolled into view.
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+      },
+      { threshold: 0 }
+    );
+    io.observe(canvas);
+
     // Render loop — guarded so it never throws if globe isn't ready.
     const animate = () => {
-      if (globe && width > 0) {
+      if (globe && width > 0 && visible && !document.hidden) {
         phi += 0.004;
         try {
-          globe.update({ phi, width: width * 2, height: width * 2 });
+          globe.update({ phi, width: width * dpr, height: width * dpr });
         } catch {
           /* swallow transient update errors */
         }
@@ -246,6 +257,7 @@ function Globe() {
       if (rebuildTimer) clearTimeout(rebuildTimer);
       cancelAnimationFrame(frameId);
       ro.disconnect();
+      io.disconnect();
       canvas.removeEventListener("webglcontextlost", onLost as EventListener);
       canvas.removeEventListener("webglcontextrestored", onRestored as EventListener);
       document.removeEventListener("visibilitychange", onVisible);

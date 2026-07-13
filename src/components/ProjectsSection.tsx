@@ -28,9 +28,9 @@ const PROJECTS: Project[] = [
     desc: "A multi-tenant email outreach platform — dual sending providers, scheduled campaigns, and workspace-scoped data, built for reliability.",
     href: "#",
     img: {
-      col1a: "/work/tetramagnet-features.png",
-      col1b: "/work/tetramagnet-dashboard.png",
-      col2: "/work/tetramagnet-home.png",
+      col1a: "/work/tetramagnet-features.webp",
+      col1b: "/work/tetramagnet-dashboard.webp",
+      col2: "/work/tetramagnet-home.webp",
     },
   },
   {
@@ -40,9 +40,9 @@ const PROJECTS: Project[] = [
     desc: "A multi-page Power BI dashboard for retail sales and logistics — one semantic model, a shared DAX library, and a consistent theme.",
     href: "#",
     img: {
-      col1a: "/work/retail-performance.jpeg",
-      col1b: "/work/retail-shipment.jpeg",
-      col2: "/work/retail-overview.jpeg",
+      col1a: "/work/retail-performance.webp",
+      col1b: "/work/retail-shipment.webp",
+      col2: "/work/retail-overview.webp",
     },
   },
   {
@@ -52,9 +52,9 @@ const PROJECTS: Project[] = [
     desc: "A content-managed WordPress theme built from a static design — editable where it matters, handed off for non-technical staff to run.",
     href: "#",
     img: {
-      col1a: "/work/newrevert-roadmap.png",
-      col1b: "/work/newrevert-features.png",
-      col2: "/work/newrevert-home.png",
+      col1a: "/work/newrevert-roadmap.webp",
+      col1b: "/work/newrevert-features.webp",
+      col2: "/work/newrevert-home.webp",
     },
   },
 ];
