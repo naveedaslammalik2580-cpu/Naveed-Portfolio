@@ -19,7 +19,7 @@ export default function AboutSection() {
         {/* Left: photo */}
         <FadeIn x={-40} y={0} duration={0.9} className="w-full">
           <div className="mx-auto aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-[32px] md:mx-0 md:rounded-[40px]">
-            <ImageSlot src={ABOUT_IMAGE} alt="Naveed Aslam" label="Add your photo" />
+            <ImageSlot src={ABOUT_IMAGE} alt="Naveed Aslam" label="Add your photo" priority />
           </div>
         </FadeIn>
 

@@ -134,6 +134,7 @@ export default function ProjectsSection() {
           <img
             src={lightbox.images[lightbox.index]}
             alt={lightbox.alts[lightbox.index]}
+            decoding="async"
             className="max-h-[88vh] max-w-[92vw] rounded-xl object-contain shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
@@ -224,7 +225,7 @@ function Card({
               tabIndex={project.img.col2 ? 0 : undefined}
               onClick={project.img.col2 ? () => onOpen(galleryImages, galleryAlts, galleryImages.indexOf(project.img.col2)) : undefined}
             >
-              <ImageSlot src={project.img.col2} alt={project.name + " — overview screenshot"} className="bg-[#0d0e11]" />
+              <ImageSlot src={project.img.col2} alt={project.name + " — overview screenshot"} className="bg-[#0d0e11]" priority={index === 0} />
             </div>
 
             {/* Right column: two stacked images */}

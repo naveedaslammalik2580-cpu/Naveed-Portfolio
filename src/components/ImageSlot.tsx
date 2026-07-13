@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+import { type CSSProperties, useState } from "react";
 
 type ImageSlotProps = {
   /** Real image URL/import. Leave empty to show a labeled placeholder. */
@@ -10,6 +10,8 @@ type ImageSlotProps = {
   label?: string;
   /** "cover" (default) crops to fill; "contain" fits the whole image, letterboxed. */
   fit?: "cover" | "contain";
+  /** Set true for images visible at/near the top of the page on load (skips lazy-loading). */
+  priority?: boolean;
 };
 
 /**
@@ -24,14 +26,26 @@ export default function ImageSlot({
   style,
   label = "Add image",
   fit = "cover",
+  priority = false,
 }: ImageSlotProps) {
+  const [loaded, setLoaded] = useState(false);
+
   if (src) {
     return (
       <img
         src={src}
         alt={alt}
-        loading="lazy"
-        className={(fit === "contain" ? "object-contain" : "object-cover") + " w-full h-full " + className}
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : "auto"}
+        decoding="async"
+        onLoad={() => setLoaded(true)}
+        className={
+          (fit === "contain" ? "object-contain" : "object-cover") +
+          " w-full h-full transition-opacity duration-500 " +
+          (loaded ? "opacity-100" : "opacity-0") +
+          " " +
+          className
+        }
         style={style}
       />
     );
