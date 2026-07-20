@@ -95,22 +95,23 @@ export default function HeroSection() {
 
       {/* Hero content */}
       <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-5 text-center sm:px-8">
-        <FadeIn as="h1" delay={0.1} y={40}>
-          <h1
-            className="font-black leading-[1.05] tracking-tight text-[#EEF2F6]"
-            style={{ fontSize: "clamp(2.2rem, 6vw, 5.5rem)", textShadow: "0 2px 14px rgba(0,0,0,0.55)" }}
-          >
-            I engineer{" "}
-            <span className="italic" style={{ color: "#C6902E" }}>
-              products
-            </span>
-            , and turn
-            <br className="hidden sm:block" /> their data into{" "}
-            <span className="italic" style={{ color: "#C6902E" }}>
-              decisions
-            </span>
-            .
-          </h1>
+        <FadeIn
+          as="h1"
+          delay={0.1}
+          y={40}
+          className="font-display font-semibold leading-[1.05] tracking-tight text-[#EEF2F6]"
+          style={{ fontSize: "clamp(2.2rem, 6vw, 5.5rem)", textShadow: "0 2px 14px rgba(0,0,0,0.55)" }}
+        >
+          I engineer{" "}
+          <span className="font-bold" style={{ color: "#C6902E" }}>
+            products
+          </span>
+          , and turn
+          <br className="hidden sm:block" /> their data into{" "}
+          <span className="font-bold" style={{ color: "#C6902E" }}>
+            decisions
+          </span>
+          .
         </FadeIn>
 
         <FadeIn delay={0.25} y={24}>
