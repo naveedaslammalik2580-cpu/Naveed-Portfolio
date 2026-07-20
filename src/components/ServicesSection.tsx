@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import FadeIn from "./FadeIn";
 import ImageSlot from "./ImageSlot";
 
@@ -90,6 +91,17 @@ export default function ServicesSection() {
               </div>
             </FadeIn>
           ))}
+
+          <FadeIn delay={SERVICES.length * 0.08} className="mt-10 sm:mt-12 md:mt-16">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 font-medium text-[#0C0C0C] transition-opacity duration-200 hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0C0C0C]"
+              style={{ fontSize: "clamp(1rem, 1.8vw, 1.3rem)" }}
+            >
+              Need all of this in one person? Let&apos;s talk
+              <ArrowRight size={18} style={{ color: "#C6902E" }} />
+            </a>
+          </FadeIn>
         </div>
       </div>
     </section>
