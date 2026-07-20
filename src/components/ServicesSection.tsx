@@ -66,14 +66,14 @@ export default function ServicesSection() {
               }
             >
               <span
-                className="shrink-0 font-black leading-none text-[#0C0C0C]"
+                className="font-display tabular-nums shrink-0 font-bold leading-none text-[#0C0C0C]"
                 style={{ fontSize: "clamp(2rem, 8vw, 120px)" }}
               >
                 {s.n}
               </span>
               <div className="flex flex-col gap-3 pt-1 sm:pt-2 md:pt-3">
                 <h3
-                  className="font-medium uppercase text-[#0C0C0C]"
+                  className="font-display font-semibold uppercase text-[#0C0C0C]"
                   style={{ fontSize: "clamp(1rem, 2.2vw, 2.1rem)" }}
                 >
                   {s.name}

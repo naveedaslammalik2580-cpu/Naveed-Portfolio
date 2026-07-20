@@ -186,7 +186,7 @@ function Card({
           <div className="mb-4 flex flex-wrap items-center justify-between gap-4 sm:mb-6">
             <div className="flex items-center gap-4 sm:gap-6">
               <span
-                className="font-black leading-none text-[#D7E2EA]"
+                className="font-display tabular-nums font-bold leading-none text-[#D7E2EA]"
                 style={{ fontSize: "clamp(2.25rem, 9vw, 140px)" }}
               >
                 {project.n}
@@ -196,7 +196,7 @@ function Card({
                   {project.category}
                 </span>
                 <span
-                  className="font-medium uppercase text-[#D7E2EA]"
+                  className="font-display font-semibold uppercase text-[#D7E2EA]"
                   style={{ fontSize: "clamp(1rem, 2.2vw, 2.1rem)" }}
                 >
                   {project.name}

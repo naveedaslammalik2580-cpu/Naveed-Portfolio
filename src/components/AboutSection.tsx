@@ -29,7 +29,7 @@ export default function AboutSection() {
             as="h2"
             delay={0.1}
             y={40}
-            className="hero-heading text-left font-black uppercase leading-none tracking-tight"
+            className="hero-heading font-display text-left font-bold uppercase leading-none tracking-tight"
             style={{ fontSize: "clamp(2.5rem, 7vw, 110px)" }}
           >
             About me

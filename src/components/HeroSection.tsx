@@ -55,7 +55,7 @@ export default function HeroSection() {
       <FadeIn as="nav" delay={0} y={-20} className="relative z-20">
         <div className="flex items-center justify-between px-4 pt-6 sm:px-6 md:px-10 md:pt-8">
           <span
-            className="text-base font-black uppercase tracking-wide sm:text-lg md:text-xl"
+            className="font-display text-base font-bold uppercase tracking-wide sm:text-lg md:text-xl"
             style={{
               color: "#C6902E",
               textShadow: "0 1px 6px rgba(0,0,0,0.35)",

@@ -1,5 +1,5 @@
-/* Kanit — loaded via Google Fonts. (Also linked in index.html for early fetch.) */
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap");
+/* Space Grotesk (headings/display) + Inter (body/UI) — loaded via Google Fonts. (Also linked in index.html for early fetch.) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,400;1,500&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +17,7 @@ html,
 body,
 #root {
   background: #0c0c0c;
-  font-family: "Kanit", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Gradient hero-style heading text. */

@@ -83,7 +83,7 @@ export default function Footer() {
         <FadeIn
           as="h2"
           y={40}
-          className="hero-heading font-black uppercase leading-none tracking-tight"
+          className="hero-heading font-display font-bold uppercase leading-none tracking-tight"
           style={{ fontSize: "clamp(2.5rem, 10vw, 150px)" }}
         >
           Let&apos;s work together
