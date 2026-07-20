@@ -34,12 +34,14 @@ export default function ServicesSection() {
       id="skills"
       className="bg-white rounded-t-[40px] px-5 py-20 sm:rounded-t-[50px] sm:px-8 sm:py-24 md:rounded-t-[60px] md:px-10 md:py-32"
     >
-      <h2
-        className="mb-14 text-center font-black uppercase text-[#0C0C0C] sm:mb-16 md:mb-24"
+      <FadeIn
+        as="h2"
+        y={40}
+        className="font-display mb-14 text-center font-bold uppercase text-[#0C0C0C] sm:mb-16 md:mb-24"
         style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
       >
         Services
-      </h2>
+      </FadeIn>
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-14">
         {/* Left: sticky image (hidden on mobile to keep the list clean) */}

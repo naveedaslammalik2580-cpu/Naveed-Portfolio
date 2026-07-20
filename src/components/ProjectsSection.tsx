@@ -91,11 +91,14 @@ export default function ProjectsSection() {
       id="work"
       className="relative z-10 -mt-10 rounded-t-[40px] bg-[#0C0C0C] px-5 pt-20 pb-10 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
     >
-      <h2 className="hero-heading mb-8 text-center font-black uppercase leading-none tracking-tight sm:mb-12 md:mb-16"
+      <FadeIn
+        as="h2"
+        y={40}
+        className="hero-heading font-display mb-8 text-center font-bold uppercase leading-none tracking-tight sm:mb-12 md:mb-16"
         style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
       >
         Work
-      </h2>
+      </FadeIn>
 
       <div>
         {PROJECTS.map((project, i) => (
