@@ -3,8 +3,14 @@ import AnimatedText from "./AnimatedText";
 import ContactButton from "./ContactButton";
 import ImageSlot from "./ImageSlot";
 
-const ABOUT_PARAGRAPH =
-  "I work across three roles that most people split between three hires. As a software engineer I care about the part under the surface — architecture, structure, code that scales instead of cracking. As a full-stack developer I take it all the way to production, frontend to backend. And as a data analyst I turn what the product does into numbers people can decide on. Same standard at every stage: build it right, and make it prove itself.";
+const ABOUT_PARAGRAPH_1 =
+  "Most projects need two hires: someone to build the product, and someone to make sense of the data it produces. I do both. That means no handoff gaps, no \"that's not my part,\" and one person who understands your system end to end.";
+
+const ABOUT_PARAGRAPH_2 =
+  "I work across the full stack — React, Next.js, Node, PostgreSQL — and on the analytics side with Power BI and DAX. In practice that looks like shipping a multi-tenant SaaS platform to production on Azure, then building the semantic models and dashboards that tell a business what's actually happening inside it.";
+
+const ABOUT_PARAGRAPH_3 =
+  "I'm based in Pakistan and work remotely with clients on their hours. I reply within a day, I tell you when something won't work instead of quietly building it anyway, and I finish what I start.";
 
 // ⚠️ Put your real photo at public/about.jpg (or .png) and set the path here:
 const ABOUT_IMAGE = "/naveed.webp";
@@ -32,14 +38,34 @@ export default function AboutSection() {
             className="hero-heading font-display text-left font-bold uppercase leading-none tracking-tight"
             style={{ fontSize: "clamp(2.5rem, 7vw, 110px)" }}
           >
-            About me
+            One person, accountable for the whole thing.
           </FadeIn>
 
           <AnimatedText
-            text={ABOUT_PARAGRAPH}
+            text={ABOUT_PARAGRAPH_1}
             className="max-w-[560px] text-left font-medium leading-relaxed text-[#D7E2EA]"
             style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
           />
+
+          <FadeIn
+            as="p"
+            delay={0.3}
+            y={24}
+            className="max-w-[560px] text-left font-medium leading-relaxed text-[#D7E2EA]"
+            style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
+          >
+            {ABOUT_PARAGRAPH_2}
+          </FadeIn>
+
+          <FadeIn
+            as="p"
+            delay={0.45}
+            y={24}
+            className="max-w-[560px] text-left font-medium leading-relaxed text-[#D7E2EA]"
+            style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
+          >
+            {ABOUT_PARAGRAPH_3}
+          </FadeIn>
 
           <ContactButton label="Let's Talk" href="#contact" />
         </div>

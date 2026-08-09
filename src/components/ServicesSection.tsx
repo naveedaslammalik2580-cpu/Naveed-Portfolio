@@ -5,23 +5,23 @@ import ImageSlot from "./ImageSlot";
 const SERVICES = [
   {
     n: "01",
-    name: "Software Engineering",
-    desc: "Clean architecture and sensible structure — systems designed to hold up, not systems that turn into a rewrite six months later.",
+    name: "A working web application",
+    desc: "Full-stack builds from empty repo to live URL. React or Next.js on the front, Node and PostgreSQL behind it, deployed and running on your domain. Multi-tenant, auth, roles — the parts that are tedious to get right.",
   },
   {
     n: "02",
-    name: "Full-Stack Development",
-    desc: "Complete products shipped end to end in React, Next.js, and Node — frontend to backend, design to deployment, live in production.",
+    name: "Power BI dashboards your team actually opens",
+    desc: "A proper semantic model underneath, not a screenshot with charts on it. Date tables, clean relationships, a DAX measure library, and a report that answers the questions your team keeps asking manually.",
   },
   {
     n: "03",
-    name: "Data Analysis & BI",
-    desc: "Power BI dashboards and data models that turn what a product does into numbers a team can actually act on.",
+    name: "Rescuing data that's stuck in spreadsheets",
+    desc: "If your numbers live across exports, tabs, and one person's laptop, I consolidate them into a model that updates itself and a report anyone can read.",
   },
   {
     n: "04",
-    name: "API & Backend Systems",
-    desc: "Reliable, workspace-scoped backend systems built for isolation and scale — the part under the surface that has to hold up.",
+    name: "WordPress sites you can update without a developer",
+    desc: "Custom themes with editable content fields, so changing a section doesn't mean emailing me. Built to your design, handed over maintainable.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function ServicesSection() {
         className="font-display mb-14 text-center font-bold uppercase text-[#0C0C0C] sm:mb-16 md:mb-24"
         style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
       >
-        Services
+        Four ways I get hired.
       </FadeIn>
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-14">
@@ -94,14 +94,25 @@ export default function ServicesSection() {
             </FadeIn>
           ))}
 
-          <FadeIn delay={SERVICES.length * 0.08} className="mt-10 sm:mt-12 md:mt-16">
+          <FadeIn
+            delay={SERVICES.length * 0.08}
+            className="mt-10 flex flex-col items-start gap-4 sm:mt-12 sm:gap-5 md:mt-16"
+          >
+            <p
+              className="max-w-md font-light leading-relaxed text-[#0C0C0C]"
+              style={{ fontSize: "clamp(0.9rem, 1.4vw, 1.05rem)", opacity: 0.6 }}
+            >
+              Not sure which one you need? Tell me the problem and
+              I&apos;ll tell you honestly whether I&apos;m the right person
+              for it.
+            </p>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 font-medium text-[#0C0C0C] transition-opacity duration-200 hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0C0C0C]"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--gold-solid)] px-6 py-3 sm:px-8 sm:py-3.5 font-medium text-[#0C0C0C] transition-colors duration-200 hover:bg-[var(--gold-solid-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0C0C0C]"
               style={{ fontSize: "clamp(1rem, 1.8vw, 1.3rem)" }}
             >
-              Need all of this in one person? Let&apos;s talk
-              <ArrowRight size={18} style={{ color: "#C6902E" }} />
+              Let&apos;s talk
+              <ArrowRight size={18} />
             </a>
           </FadeIn>
         </div>

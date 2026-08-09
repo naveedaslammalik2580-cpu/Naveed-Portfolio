@@ -182,7 +182,10 @@ function Card({
   const galleryAlts = gallery.map((item) => item.alt);
 
   return (
-    <div className="mb-16 flex justify-center sm:mb-20 md:mb-24">
+    <div
+      id={project.name === "TetraMagnet" ? "tetramagnet" : undefined}
+      className="mb-16 flex scroll-mt-24 justify-center sm:mb-20 md:mb-24"
+    >
       <FadeIn y={40} delay={index * 0.05} className="w-full max-w-5xl">
         <div className="flex w-full flex-col rounded-[40px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:rounded-[50px] sm:p-6 md:rounded-[60px] md:p-8">
           {/* Top row */}

@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Canonical CTA gold — single source of truth. Every primary/solid CTA
+   (Hero, ContactButton, Footer submit, Services) draws from these. */
+:root {
+  --gold-gradient: linear-gradient(120deg, #c6902e 0%, #e0b44a 100%);
+  --gold-shadow: 0 8px 22px -8px rgba(198, 144, 46, 0.65);
+  --gold-solid: #c6902e;
+  --gold-solid-hover: #a47726;
+}
+
 *,
 *::before,
 *::after {

@@ -1,30 +1,26 @@
 import { useEffect, useRef } from "react";
 import createGlobe from "cobe";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import FadeIn from "./FadeIn";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Work", href: "#work" },
   { label: "Contact", href: "#contact" },
 ];
 
-const ROLES = [
-  "Software Engineer",
-  "Full-Stack Developer",
-  "Data Analyst",
-  "React",
-  "Node.js",
-  "Power BI",
-];
+// No booking link was supplied — falls back to a prefilled mailto. Swap for a
+// real Calendly / Cal.com URL (and add target="_blank" rel="noopener noreferrer") when you have one.
+const BOOKING_URL = "mailto:lifeislove975@gmail.com?subject=Project%20enquiry";
 
 export default function HeroSection() {
   return (
     <section
-      className="relative flex h-screen flex-col overflow-hidden"
+      id="home"
+      className="relative flex min-h-screen flex-col overflow-hidden"
       style={{
         background:
           "linear-gradient(180deg, #e4e8ee 0%, #c2c9d3 15%, #4a525e 38%, #14181f 65%, #0C0C0C 100%)",
@@ -80,10 +76,11 @@ export default function HeroSection() {
             href="https://wa.me/923296136483"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex shrink-0 items-center gap-1.5 rounded-full px-4 py-2.5 text-sm font-medium uppercase tracking-widest text-white transition-transform duration-200 hover:scale-[1.03] sm:gap-2 sm:px-6"
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border-2 px-4 py-2.5 text-sm font-medium uppercase tracking-widest text-[#D7E2EA] transition-colors duration-200 hover:bg-[#D7E2EA]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D7E2EA] sm:gap-2 sm:px-6"
             style={{
-              background: "linear-gradient(120deg, #C6902E 0%, #E0B44A 100%)",
-              boxShadow: "0 6px 18px -6px rgba(198,144,46,0.6)",
+              borderColor: "#D7E2EA",
+              textShadow: "0 1px 8px rgba(0,0,0,0.55)",
+              boxShadow: "0 1px 10px rgba(0,0,0,0.3)",
             }}
           >
             <FaWhatsapp size={16} />
@@ -94,67 +91,102 @@ export default function HeroSection() {
       </FadeIn>
 
       {/* Hero content */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-5 text-center sm:px-8">
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-5 py-28 text-center sm:px-8 sm:py-32">
+        <FadeIn
+          as="p"
+          delay={0.05}
+          y={16}
+          className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] sm:mb-4 sm:text-sm"
+          style={{ color: "#C6902E", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}
+        >
+          Full-stack development + Power BI analytics
+        </FadeIn>
+
         <FadeIn
           as="h1"
-          delay={0.1}
+          delay={0.15}
           y={40}
           className="font-display font-semibold leading-[1.05] tracking-tight text-[#EEF2F6]"
-          style={{ fontSize: "clamp(2.2rem, 6vw, 5.5rem)", textShadow: "0 2px 14px rgba(0,0,0,0.55)" }}
+          style={{ fontSize: "clamp(1.9rem, 5.4vw, 4.6rem)", textShadow: "0 2px 14px rgba(0,0,0,0.55)" }}
         >
-          I engineer{" "}
+          I build the{" "}
           <span className="font-bold" style={{ color: "#C6902E" }}>
-            products
-          </span>
-          , and turn
-          <br className="hidden sm:block" /> their data into{" "}
+            product
+          </span>{" "}
+          — and the{" "}
           <span className="font-bold" style={{ color: "#C6902E" }}>
-            decisions
-          </span>
-          .
-        </FadeIn>
-
-        <FadeIn delay={0.25} y={24}>
-          <div
-            className="mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-x-3 gap-y-2 font-medium uppercase tracking-wide text-[#D7E2EA]"
-            style={{ fontSize: "clamp(0.7rem, 1.2vw, 0.95rem)", textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}
-          >
-            {ROLES.map((role, i) => (
-              <span key={role} className="flex items-center gap-x-3">
-                {role}
-                {i < ROLES.length - 1 && (
-                  <span aria-hidden="true" style={{ color: "#C6902E" }}>
-                    &bull;
-                  </span>
-                )}
-              </span>
-            ))}
-          </div>
+            dashboards
+          </span>{" "}
+          that tell you it&apos;s working.
         </FadeIn>
 
         <FadeIn
+          as="p"
+          delay={0.3}
+          y={24}
+          className="mt-5 max-w-2xl font-display font-medium leading-snug text-[#D7E2EA] sm:mt-6"
+          style={{ fontSize: "clamp(1rem, 2.4vw, 1.5rem)", textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}
+        >
+          Web apps and business analytics, shipped end-to-end by one person.
+          You get a live product and the numbers to run it — without hiring a
+          team.
+        </FadeIn>
+
+        <FadeIn
+          as="p"
           delay={0.4}
           y={24}
-          className="mt-9 flex flex-col items-center gap-4 sm:flex-row"
+          className="mt-4 max-w-2xl font-normal leading-relaxed text-[#D7E2EA]/80"
+          style={{ fontSize: "clamp(0.8rem, 1.4vw, 1rem)" }}
+        >
+          I&apos;ve built a multi-tenant SaaS platform, a retail analytics
+          suite, and production WordPress sites. If you need software that
+          ships and data you can actually read, that&apos;s the whole job I
+          do.
+        </FadeIn>
+
+        <FadeIn
+          delay={0.55}
+          y={24}
+          className="mt-8 flex flex-col items-center gap-3 sm:mt-9 sm:flex-row sm:gap-4"
         >
           <a
-            href="#work"
-            className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-widest text-white transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
+            href={BOOKING_URL}
+            className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-widest text-[#0C0C0C] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
             style={{
-              background: "linear-gradient(120deg, #C6902E 0%, #E0B44A 100%)",
-              boxShadow: "0 8px 22px -8px rgba(198,144,46,0.65)",
+              background: "var(--gold-gradient)",
+              boxShadow: "var(--gold-shadow)",
             }}
           >
-            See my work <ArrowRight size={16} />
+            Book a free 20-min project call <ArrowRight size={16} />
           </a>
           <a
-            href="/resume.pdf"
-            download="Naveed-Aslam-Resume.pdf"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-medium uppercase tracking-widest text-[#1b2431] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            style={{ boxShadow: "0 8px 22px -10px rgba(0,0,0,0.5)" }}
+            href="#tetramagnet"
+            className="inline-flex items-center gap-2 rounded-full border-2 px-8 py-3.5 text-sm font-medium uppercase tracking-widest text-[#D7E2EA] transition-colors duration-200 hover:bg-[#D7E2EA]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D7E2EA]"
+            style={{ borderColor: "#D7E2EA" }}
           >
-            <Download size={16} /> Download résumé
+            See how I built TetraMagnet <ArrowRight size={16} />
           </a>
+        </FadeIn>
+
+        <FadeIn
+          as="p"
+          delay={0.65}
+          y={16}
+          className="mt-4 text-[10px] font-medium uppercase tracking-wider text-[#D7E2EA]/60 sm:text-xs"
+        >
+          Usually replies within 24 hours · Remote · Available for new projects
+        </FadeIn>
+
+        <FadeIn
+          as="p"
+          delay={0.75}
+          y={16}
+          className="mt-5 max-w-3xl font-medium uppercase tracking-wide text-[#D7E2EA]/50"
+          style={{ fontSize: "clamp(0.6rem, 1vw, 0.75rem)" }}
+        >
+          Built with React · Next.js · Node · Power BI &nbsp;|&nbsp; Shipped:
+          a live SaaS, analytics dashboards, WordPress sites
         </FadeIn>
       </div>
     </section>
@@ -267,7 +299,10 @@ function Globe() {
   }, []);
 
   return (
-    <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 aspect-square w-[min(170vw,1400px)] -translate-x-1/2 -translate-y-1/2">
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute left-1/2 top-1/2 z-0 aspect-square w-[min(130vw,1200px)] -translate-x-1/2 -translate-y-1/2 opacity-40"
+    >
       <canvas
         ref={canvasRef}
         style={{
