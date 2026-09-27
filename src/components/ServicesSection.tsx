@@ -5,23 +5,17 @@ import ImageSlot from "./ImageSlot";
 const SERVICES = [
   {
     n: "01",
-    name: "A working web application",
-    desc: "Full-stack builds from empty repo to live URL. React or Next.js on the front, Node and PostgreSQL behind it, deployed and running on your domain. Multi-tenant, auth, roles — the parts that are tedious to get right.",
+    name: "A business website that actually does its job",
+    desc: "Whether you don't have a website yet, or the one you have is slow, hard to use on a phone, or missing the things customers actually need — I build sites that load fast, look right on every screen, and make it easy for people to contact you or book with you. Custom-coded or WordPress, depending on what fits. Handed over so you can update text and add pages without emailing me every time.",
+    linkLabel: "See business website projects",
+    href: "#work",
   },
   {
     n: "02",
-    name: "Power BI dashboards your team actually opens",
-    desc: "A proper semantic model underneath, not a screenshot with charts on it. Date tables, clean relationships, a DAX measure library, and a report that answers the questions your team keeps asking manually.",
-  },
-  {
-    n: "03",
-    name: "Rescuing data that's stuck in spreadsheets",
-    desc: "If your numbers live across exports, tabs, and one person's laptop, I consolidate them into a model that updates itself and a report anyone can read.",
-  },
-  {
-    n: "04",
-    name: "WordPress sites you can update without a developer",
-    desc: "Custom themes with editable content fields, so changing a section doesn't mean emailing me. Built to your design, handed over maintainable.",
+    name: "Custom web apps & SaaS platforms",
+    desc: "Full-stack builds from empty repo to live URL. Next.js, Node, PostgreSQL — multi-tenant architecture, authentication, role-based access, the parts that are tedious to get right. Best for founders who need real software shipped without hiring a team, and for businesses that have outgrown a marketing site.",
+    linkLabel: "See software projects",
+    href: "#work",
   },
 ];
 
@@ -40,7 +34,7 @@ export default function ServicesSection() {
         className="font-display mb-14 text-center font-bold uppercase text-[#0C0C0C] sm:mb-16 md:mb-24"
         style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
       >
-        Four ways I get hired.
+        Two ways I get hired.
       </FadeIn>
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-14">
@@ -90,6 +84,13 @@ export default function ServicesSection() {
                 >
                   {s.desc}
                 </p>
+                <a
+                  href={s.href}
+                  className="inline-flex items-center gap-2 font-medium text-[#0C0C0C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0C0C0C]"
+                >
+                  {s.linkLabel}
+                  <ArrowRight size={18} />
+                </a>
               </div>
             </FadeIn>
           ))}
