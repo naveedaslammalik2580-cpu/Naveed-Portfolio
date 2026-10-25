@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const LINKS = [
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
   { label: "Work", href: "#work" },
+  { label: "Services", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const EASE: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
@@ -19,6 +20,7 @@ const EASE: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
 export default function StickyNav() {
   const [visible, setVisible] = useState(false);
   const navRef = useRef<HTMLElement>(null);
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     const hero = document.getElementById("home");
@@ -42,9 +44,10 @@ export default function StickyNav() {
   return (
     <motion.nav
       ref={navRef}
-      initial={{ opacity: 0, y: -16 }}
-      animate={{ opacity: visible ? 1 : 0, y: visible ? 0 : -16 }}
-      transition={{ duration: 0.35, ease: EASE }}
+      aria-label="Section navigation"
+      initial={{ opacity: 0, y: reduceMotion ? 0 : -16 }}
+      animate={{ opacity: visible ? 1 : 0, y: visible || reduceMotion ? 0 : -16 }}
+      transition={{ duration: reduceMotion ? 0 : 0.35, ease: EASE }}
       className="fixed inset-x-0 top-0 z-40"
       style={{
         background: "rgba(12,12,12,0.85)",
@@ -57,7 +60,7 @@ export default function StickyNav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 md:px-10">
         <a
           href="#home"
-          className="font-display text-sm font-bold uppercase tracking-wide sm:text-base"
+          className="font-display text-sm font-bold uppercase tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C6902E] sm:text-base"
           style={{ color: "#C6902E" }}
         >
           Naveed Aslam
@@ -68,7 +71,7 @@ export default function StickyNav() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="text-sm font-bold uppercase tracking-wider text-[#D7E2EA] transition-opacity duration-200 hover:opacity-60"
+                className="text-sm font-bold uppercase tracking-wider text-[#D7E2EA] transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C6902E]"
               >
                 {link.label}
               </a>
