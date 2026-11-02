@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { Code2, Layers3, PanelsTopLeft, LockKeyhole, Lock } from "lucide-react";
-import FadeIn from "./FadeIn";
 import styles from "./HeroProductVisual.module.css";
 
 const CAPABILITIES = [
@@ -47,18 +46,6 @@ export default function HeroProductVisual({ children }: { children: ReactNode })
           width={1600}
           height={728}
         />
-      </div>
-
-      <div className={styles.primary}>
-        <FadeIn y={12} delay={0.35}>
-          <BrowserFrame
-            src="/work/tetramagnet-home.webp"
-            alt="Existing Outreach SaaS product homepage, shown in the TetraMagnet portfolio project"
-            label="Outreach / Product"
-            width={1600}
-            height={827}
-          />
-        </FadeIn>
       </div>
       <div className={styles.ground} aria-hidden="true" />
     </div>

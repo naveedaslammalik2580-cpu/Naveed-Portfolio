@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="inline-flex min-h-11 items-center text-xs font-medium uppercase tracking-wider text-[#A9ADB7] transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037] sm:text-sm"
+                    className="inline-flex min-h-11 items-center text-xs font-medium uppercase tracking-wider text-[#D1D5DB] transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037] sm:text-sm"
                   >
                     {link.label}
                   </a>
@@ -53,8 +53,8 @@ export default function HeroSection() {
               href="https://wa.me/923296136483"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border px-4 py-2.5 text-xs font-medium uppercase tracking-wider text-[#A9ADB7] transition-colors duration-200 hover:bg-[#A9ADB7]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9ADB7] sm:gap-2 sm:px-6 sm:text-sm"
-              style={{ borderColor: "#343944" }}
+              className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border px-4 py-2.5 text-xs font-medium uppercase tracking-wider text-[#D1D5DB] transition-colors duration-200 hover:bg-[#D1D5DB]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D1D5DB] sm:gap-2 sm:px-6 sm:text-sm"
+              style={{ borderColor: "#48505E" }}
             >
               <FaWhatsapp size={16} aria-hidden="true" />
               <span className="sm:hidden">WhatsApp</span>
@@ -93,7 +93,7 @@ export default function HeroSection() {
               as="p"
               delay={0.3}
               y={24}
-              className="mt-6 max-w-xl text-base font-normal leading-relaxed text-[#A9ADB7]/80 sm:text-lg"
+              className="mt-6 max-w-xl text-base font-normal leading-relaxed text-[#D1D5DB] sm:text-lg"
             >
               I design and develop complete digital products — from responsive
               interfaces to APIs, databases, authentication, and production-ready
@@ -117,8 +117,8 @@ export default function HeroSection() {
               </a>
               <a
                 href={BOOKING_URL}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border px-7 py-3.5 text-sm font-medium uppercase tracking-wider text-[#A9ADB7] transition-colors duration-200 hover:bg-[#A9ADB7]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9ADB7]"
-                style={{ borderColor: "#343944" }}
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border px-7 py-3.5 text-sm font-medium uppercase tracking-wider text-[#D1D5DB] transition-colors duration-200 hover:bg-[#D1D5DB]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D1D5DB]"
+                style={{ borderColor: "#48505E" }}
               >
                 BOOK A PROJECT CALL <ArrowRight size={16} aria-hidden="true" />
               </a>
@@ -128,7 +128,7 @@ export default function HeroSection() {
               as="p"
               delay={0.65}
               y={16}
-              className="mt-5 max-w-xl text-xs leading-relaxed text-[#A9ADB7]/70 sm:text-sm"
+              className="mt-5 max-w-xl text-xs leading-relaxed text-[#CBD5E1] sm:text-sm"
             >
               Usually replies within 24 hours · Remote · Available for new projects
             </FadeIn>

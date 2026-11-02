@@ -9,16 +9,19 @@
    (Hero, ContactButton, Footer submit, Services) draws from these. */
 /* Official palette — Dark Charcoal + Warm Golden Ambient Glow (single source of truth).
    --bg #14161B · --navy #14161B (navbar = page background) · --panel #1C2028
-   --heading #F5F6F8 · --body #A9ADB7 · --gold #D4A037 · --border #343944
+   --heading #F5F6F8 · --body #D1D5DB · --gold #D4A037 · --border #48505E
    The hero carries one subtle golden radial glow (rgba(212,160,55,...)) — nowhere else. */
 :root {
   --bg: #14161B;
   --navy: #14161B;
   --panel: #1C2028;
   --heading: #F5F6F8;
-  --body: #A9ADB7;
+  --body: #D1D5DB;
   --gold: #D4A037;
-  --border: #343944;
+  --border: #48505E;
+  --link: #E5E7EB;
+  --card-title: #F3F4F6;
+  --small: #CBD5E1;
   /* Canonical CTA gold — every primary/solid CTA draws from these. */
   --gold-gradient: #D4A037;
   --gold-shadow: 0 8px 22px -8px rgba(212, 160, 55, 0.55);
@@ -43,7 +46,7 @@ body,
 
 /* Gradient hero-style heading text. */
 .hero-heading {
-  background: linear-gradient(180deg, #A9ADB7 0%, #F5F6F8 100%);
+  background: linear-gradient(180deg, #D1D5DB 0%, #F5F6F8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,10 +55,10 @@ body,
 
 /* Services list dividers — 1px, per spec. */
 .services-row {
-  border-top: 1px solid #343944;
+  border-top: 1px solid #48505E;
 }
 .services-row--last {
-  border-bottom: 1px solid #343944;
+  border-bottom: 1px solid #48505E;
 }
 
 /* Respect reduced-motion preferences. */

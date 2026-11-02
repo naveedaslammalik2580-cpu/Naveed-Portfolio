@@ -98,7 +98,7 @@ export default function WorkPage() {
           as="p"
           delay={0.1}
           y={24}
-          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#A9ADB7]/80 sm:text-lg"
+          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#D1D5DB] sm:text-lg"
         >
           Real projects, shown one by one with their details and screenshots.
           Where a project is public, the button takes you to the actual product
@@ -111,7 +111,7 @@ export default function WorkPage() {
               <a
                 key={project.slug}
                 href={`#${project.slug}`}
-                className="rounded-full border border-[#343944] bg-[#1C2028] px-4 py-2 text-sm text-[#A9ADB7] transition-colors duration-200 hover:border-[#D4A037]/60 hover:text-[#F5F6F8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
+                className="rounded-full border border-[#48505E] bg-[#1C2028] px-4 py-2 text-sm text-[#D1D5DB] transition-colors duration-200 hover:border-[#D4A037]/60 hover:text-[#F5F6F8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
               >
                 <span className="mr-2 font-semibold text-[#D4A037]">{project.n}</span>
                 {project.name}
@@ -134,11 +134,11 @@ export default function WorkPage() {
 
       <section className="relative mx-auto max-w-6xl px-5 pb-24 pt-4 sm:px-8 md:px-10">
         <FadeIn y={32}>
-          <div className="rounded-[32px] border border-[#343944] bg-[#1C2028] px-6 py-12 text-center sm:rounded-[40px] sm:px-10 sm:py-16">
+          <div className="rounded-[32px] border border-[#48505E] bg-[#1C2028] px-6 py-12 text-center sm:rounded-[40px] sm:px-10 sm:py-16">
             <h2 className="font-display mx-auto max-w-2xl text-3xl font-semibold leading-tight text-[#F5F6F8] sm:text-4xl">
               Have a project like one of these in mind?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-[#A9ADB7]/75">
+            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-[#D1D5DB]">
               Tell me the problem — I&apos;ll tell you honestly whether I&apos;m
               the right person for it.
             </p>
@@ -246,15 +246,15 @@ function ProjectBlock({
   return (
     <article id={project.slug} className="scroll-mt-24 py-8 sm:py-10">
       <FadeIn y={36}>
-        <div className="rounded-[32px] border border-[#343944] bg-[#1C2028] p-5 shadow-[0_24px_60px_-32px_rgba(0,0,0,0.8)] sm:rounded-[40px] sm:p-8 lg:p-10">
+        <div className="rounded-[32px] border border-[#48505E] bg-[#1C2028] p-5 shadow-[0_24px_60px_-32px_rgba(0,0,0,0.8)] sm:rounded-[40px] sm:p-8 lg:p-10">
           <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:gap-12">
             <div className={flip ? "lg:order-2" : ""}>
               <div className="flex items-center gap-4">
                 <span className="font-display text-lg font-semibold tracking-[0.18em] text-[#D4A037]">
                   {project.n}
                 </span>
-                <span className="h-px flex-1 bg-[#A9ADB7]/10" aria-hidden="true" />
-                <span className="text-right text-[11px] font-semibold uppercase tracking-[0.14em] text-[#A9ADB7]/55">
+                <span className="h-px flex-1 bg-[#D1D5DB]/10" aria-hidden="true" />
+                <span className="text-right text-[11px] font-semibold uppercase tracking-[0.14em] text-[#D1D5DB]/55">
                   Project {project.n}
                 </span>
               </div>
@@ -267,7 +267,7 @@ function ProjectBlock({
                 {project.category}
               </span>
 
-              <p className="mt-6 leading-relaxed text-[#A9ADB7]">
+              <p className="mt-6 leading-relaxed text-[#D1D5DB]">
                 {project.introduction}
               </p>
 
@@ -276,7 +276,7 @@ function ProjectBlock({
               </h3>
               <ul className="mt-4 space-y-3">
                 {project.built.map((item) => (
-                  <li key={item} className="flex gap-3 leading-relaxed text-[#A9ADB7]/80">
+                  <li key={item} className="flex gap-3 leading-relaxed text-[#D1D5DB]">
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#D4A037]/15 text-[#D4A037]">
                       <Check size={13} strokeWidth={2.5} aria-hidden="true" />
                     </span>
@@ -289,7 +289,7 @@ function ProjectBlock({
                 {project.tech.map((item) => (
                   <span
                     key={item}
-                    className="rounded-md border border-[#343944] bg-[#1C2028] px-2.5 py-1.5 text-xs text-[#A9ADB7]/75"
+                    className="rounded-md border border-[#48505E] bg-[#1C2028] px-2.5 py-1.5 text-xs text-[#D1D5DB]/75"
                   >
                     {item}
                   </span>
@@ -312,7 +312,7 @@ function ProjectBlock({
                     </a>
                   </div>
                 ) : (
-                  <p className="inline-block rounded-lg border border-dashed border-[#343944] px-4 py-3 text-sm italic leading-relaxed text-[#A9ADB7]/60">
+                  <p className="inline-block rounded-lg border border-dashed border-[#48505E] px-4 py-3 text-sm italic leading-relaxed text-[#D1D5DB]/60">
                     {project.accessNote}
                   </p>
                 )}
@@ -338,7 +338,7 @@ function ProjectBlock({
                 ))}
               </div>
 
-              <p className="mt-3 text-center text-[11px] uppercase tracking-[0.16em] text-[#A9ADB7]/45">
+              <p className="mt-3 text-center text-[11px] uppercase tracking-[0.16em] text-[#D1D5DB]/45">
                 Select a screenshot to enlarge
               </p>
             </div>
@@ -366,17 +366,17 @@ function ScreenshotFrame({
     <button
       type="button"
       onClick={onClick}
-      className="group block w-full overflow-hidden rounded-[22px] border border-[#343944] bg-[#14161B] text-left shadow-[0_18px_40px_-24px_rgba(0,0,0,0.9)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
+      className="group block w-full overflow-hidden rounded-[22px] border border-[#48505E] bg-[#14161B] text-left shadow-[0_18px_40px_-24px_rgba(0,0,0,0.9)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
       aria-label={`Enlarge screenshot: ${image.alt}`}
     >
       {label && (
-        <span className="flex items-center gap-2 border-b border-[#343944] bg-[#14161B] px-4 py-2.5">
+        <span className="flex items-center gap-2 border-b border-[#48505E] bg-[#14161B] px-4 py-2.5">
           <span className="flex gap-1.5" aria-hidden="true">
-            <i className="block h-2.5 w-2.5 rounded-full bg-[#343944]" />
-            <i className="block h-2.5 w-2.5 rounded-full bg-[#343944]" />
-            <i className="block h-2.5 w-2.5 rounded-full bg-[#343944]" />
+            <i className="block h-2.5 w-2.5 rounded-full bg-[#48505E]" />
+            <i className="block h-2.5 w-2.5 rounded-full bg-[#48505E]" />
+            <i className="block h-2.5 w-2.5 rounded-full bg-[#48505E]" />
           </span>
-          <span className="truncate text-xs text-[#A9ADB7]/50">{label}</span>
+          <span className="truncate text-xs text-[#D1D5DB]/50">{label}</span>
         </span>
       )}
       <span className={"block overflow-hidden " + (compact ? "aspect-[16/10]" : "aspect-[16/10]")}>

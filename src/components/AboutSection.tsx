@@ -43,7 +43,7 @@ export default function AboutSection() {
 
           <AnimatedText
             text={ABOUT_PARAGRAPH_1}
-            className="max-w-[560px] text-left font-medium leading-relaxed text-[#A9ADB7]"
+            className="max-w-[560px] text-left font-medium leading-relaxed text-[#D1D5DB]"
             style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
           />
 
@@ -51,7 +51,7 @@ export default function AboutSection() {
             as="p"
             delay={0.3}
             y={24}
-            className="max-w-[560px] text-left font-medium leading-relaxed text-[#A9ADB7]"
+            className="max-w-[560px] text-left font-medium leading-relaxed text-[#D1D5DB]"
             style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
           >
             {ABOUT_PARAGRAPH_2}
@@ -61,7 +61,7 @@ export default function AboutSection() {
             as="p"
             delay={0.45}
             y={24}
-            className="max-w-[560px] text-left font-medium leading-relaxed text-[#A9ADB7]"
+            className="max-w-[560px] text-left font-medium leading-relaxed text-[#D1D5DB]"
             style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
           >
             {ABOUT_PARAGRAPH_3}

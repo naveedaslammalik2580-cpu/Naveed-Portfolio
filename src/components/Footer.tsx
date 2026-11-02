@@ -8,10 +8,10 @@ const LINKEDIN = "https://www.linkedin.com/in/naveed-aslam-dev";
 const WHATSAPP = "https://wa.me/923296136483";
 
 const contactButtonClass =
-  "inline-flex items-center gap-2 rounded-full border border-[#343944] " +
+  "inline-flex items-center gap-2 rounded-full border border-[#48505E] " +
   "bg-[#14161B]/70 backdrop-blur-sm px-6 py-3 text-sm font-medium uppercase tracking-widest " +
-  "text-[#A9ADB7] shadow-[0_6px_20px_-8px_rgba(0,0,0,0.7)] transition-colors duration-200 " +
-  "hover:bg-[#A9ADB7] hover:text-[#14161B] focus-visible:outline focus-visible:outline-2 " +
+  "text-[#D1D5DB] shadow-[0_6px_20px_-8px_rgba(0,0,0,0.7)] transition-colors duration-200 " +
+  "hover:bg-[#D1D5DB] hover:text-[#14161B] focus-visible:outline focus-visible:outline-2 " +
   "focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]";
 
 export default function Footer() {
@@ -50,7 +50,7 @@ export default function Footer() {
           as="p"
           delay={0.1}
           y={30}
-          className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#A9ADB7]/85 sm:text-lg"
+          className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#D1D5DB]/85 sm:text-lg"
         >
           Send me the problem on the contact page, or reach me directly —
           I&apos;ll reply within a day with an honest answer on whether I can
@@ -100,13 +100,13 @@ export default function Footer() {
 
       {/* Bottom bar: copyright + back-to-top, grouped and centered */}
       <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-5 px-5 pb-10 sm:px-8">
-        <p className="text-xs text-[#A9ADB7]/60">
+        <p className="text-xs text-[#CBD5E1]/85">
           © {new Date().getFullYear()} Naveed Aslam. All rights reserved.
         </p>
         <a
           href="#hero"
           aria-label="Back to top"
-          className="inline-flex items-center justify-center rounded-full border border-[#343944] bg-[#14161B]/70 text-[#A9ADB7] transition-all duration-200 hover:scale-[1.05] hover:bg-[#A9ADB7] hover:text-[#14161B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="inline-flex items-center justify-center rounded-full border border-[#48505E] bg-[#14161B]/70 text-[#D1D5DB] transition-all duration-200 hover:scale-[1.05] hover:bg-[#D1D5DB] hover:text-[#14161B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           style={{ width: 48, height: 48 }}
         >
           <ArrowUp size={20} />

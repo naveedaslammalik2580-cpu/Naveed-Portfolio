@@ -14,7 +14,7 @@ export default function ContactHeader() {
         background: "rgba(20,22,27,0.9)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        borderBottom: "1px solid #343944",
+        borderBottom: "1px solid #48505E",
         boxShadow: "0 8px 24px -12px rgba(0,0,0,0.5)",
       }}
     >
@@ -37,7 +37,7 @@ export default function ContactHeader() {
                   "text-sm font-bold uppercase tracking-wider transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037] " +
                   (link.active
                     ? "text-[#D4A037] underline decoration-[#D4A037] decoration-2 underline-offset-8"
-                    : "text-[#A9ADB7]")
+                    : "text-[#E5E7EB]")
                 }
               >
                 {link.label}

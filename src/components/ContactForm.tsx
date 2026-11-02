@@ -8,10 +8,10 @@ const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY as string;
 type Status = "idle" | "sending" | "success" | "error";
 
 const fieldClass =
-  "w-full rounded-2xl bg-[#14161B]/95 backdrop-blur-sm border border-[#343944] " +
-  "px-5 py-4 text-[#A9ADB7] placeholder:text-[#A9ADB7]/60 outline-none " +
+  "w-full rounded-2xl bg-[#14161B]/95 backdrop-blur-sm border border-[#48505E] " +
+  "px-5 py-4 text-[#D1D5DB] placeholder:text-[#CBD5E1]/75 outline-none " +
   "shadow-[0_6px_20px_-8px_rgba(0,0,0,0.7)] transition-colors " +
-  "focus:border-[#A9ADB7]/70 focus:ring-1 focus:ring-[#A9ADB7]/40";
+  "focus:border-[#D1D5DB]/70 focus:ring-1 focus:ring-[#D1D5DB]/40";
 
 /** The message form — lives on the /contact page (moved out of the footer). */
 export default function ContactForm() {
@@ -48,16 +48,16 @@ export default function ContactForm() {
     return (
       <FadeIn delay={0.1} className="w-full">
         <div
-          className="rounded-2xl border px-6 py-10 text-[#A9ADB7]"
+          className="rounded-2xl border px-6 py-10 text-[#D1D5DB]"
           style={{
-            borderColor: "rgba(52,57,68,0.2)",
+            borderColor: "rgba(72,80,94,0.2)",
             background: "#1C2028",
           }}
         >
           <p className="text-lg font-medium uppercase tracking-wide">
             Message sent — thanks!
           </p>
-          <p className="mt-2 text-sm text-[#A9ADB7]/70">
+          <p className="mt-2 text-sm text-[#CBD5E1]">
             I&apos;ll get back to you soon.
           </p>
         </div>
@@ -130,7 +130,7 @@ export default function ContactForm() {
         {status === "sending" ? "Sending..." : "Send message"}
       </button>
 
-      <p className="text-center text-xs text-[#A9ADB7]/50">
+      <p className="text-center text-xs text-[#CBD5E1]/85">
         No obligation. If I&apos;m not the right fit, I&apos;ll say so.
       </p>
     </form>

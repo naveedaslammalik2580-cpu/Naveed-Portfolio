@@ -27,7 +27,7 @@ export default function ProjectsSection() {
         as="p"
         delay={0.08}
         y={24}
-        className="mx-auto mb-12 max-w-2xl text-center leading-relaxed text-[#A9ADB7]/75 sm:mb-16"
+        className="mx-auto mb-12 max-w-2xl text-center leading-relaxed text-[#D1D5DB] sm:mb-16"
         style={{ fontSize: "clamp(0.95rem, 1.8vw, 1.2rem)" }}
       >
         A quick look at the projects — open the Work page for the full details,
@@ -63,7 +63,7 @@ function ProjectCard({ project, index }: { project: PortfolioProject; index: num
     <FadeIn y={36} delay={(index % 2) * 0.06} className="h-full">
       <a
         href={`/work#${project.slug}`}
-        className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-[#343944] bg-[#1C2028] transition-[border-color,transform,box-shadow] duration-300 hover:-translate-y-1 hover:border-[#D4A037]/60 hover:shadow-[0_24px_50px_-28px_rgba(212,160,55,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037] sm:rounded-[32px]"
+        className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-[#48505E] bg-[#1C2028] transition-[border-color,transform,box-shadow] duration-300 hover:-translate-y-1 hover:border-[#D4A037]/60 hover:shadow-[0_24px_50px_-28px_rgba(212,160,55,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037] sm:rounded-[32px]"
         aria-label={`View ${project.name} on the Work page`}
       >
         <span className="block aspect-[16/9] overflow-hidden bg-[#14161B]">
@@ -77,7 +77,7 @@ function ProjectCard({ project, index }: { project: PortfolioProject; index: num
 
         <span className="flex flex-1 flex-col p-6 sm:p-7">
           <span className="flex items-baseline justify-between gap-4">
-            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#A9ADB7]/55">
+            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#D1D5DB]/55">
               {project.category}
             </span>
             <span className="font-display text-lg font-semibold tracking-[0.14em] text-[#D4A037]">
@@ -89,7 +89,7 @@ function ProjectCard({ project, index }: { project: PortfolioProject; index: num
             {project.name}
           </span>
 
-          <span className="mt-3 leading-relaxed text-[#A9ADB7]/75">
+          <span className="mt-3 leading-relaxed text-[#D1D5DB]">
             {project.summary}
           </span>
 

@@ -76,9 +76,9 @@ export default function ServicesSection() {
                   {s.name}
                 </h3>
                 <p
-                  className="font-light leading-relaxed text-[#A9ADB7]"
+                  className="font-light leading-relaxed text-[#D1D5DB]"
                   style={{
-                    fontSize: "clamp(0.85rem, 1.6vw, 1.25rem)",
+                    fontSize: "clamp(1rem, 1.6vw, 1.25rem)",
                   }}
                 >
                   {s.desc}
@@ -99,8 +99,8 @@ export default function ServicesSection() {
             className="mt-10 flex flex-col items-start gap-4 sm:mt-12 sm:gap-5 md:mt-16"
           >
             <p
-              className="max-w-md font-light leading-relaxed text-[#A9ADB7]"
-              style={{ fontSize: "clamp(0.9rem, 1.4vw, 1.05rem)" }}
+              className="max-w-md font-light leading-relaxed text-[#D1D5DB]"
+              style={{ fontSize: "clamp(1rem, 1.4vw, 1.05rem)" }}
             >
               Not sure which one you need? Tell me the problem and
               I&apos;ll tell you honestly whether I&apos;m the right person

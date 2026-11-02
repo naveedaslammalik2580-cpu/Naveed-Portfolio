@@ -53,7 +53,7 @@ export default function StickyNav() {
         background: "rgba(20,22,27,0.9)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        borderBottom: "1px solid #343944",
+        borderBottom: "1px solid #48505E",
         boxShadow: "0 8px 24px -12px rgba(0,0,0,0.5)",
       }}
     >
@@ -71,7 +71,7 @@ export default function StickyNav() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="text-sm font-bold uppercase tracking-wider text-[#A9ADB7] transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037]"
+                className="text-sm font-bold uppercase tracking-wider text-[#E5E7EB] transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037]"
               >
                 {link.label}
               </a>

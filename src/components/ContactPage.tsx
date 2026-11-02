@@ -90,7 +90,7 @@ export default function ContactPage() {
           as="p"
           delay={0.1}
           y={24}
-          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#A9ADB7]/80 sm:text-lg"
+          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#D1D5DB] sm:text-lg"
         >
           Send me the problem — what&apos;s broken, what you need built, or what
           your data isn&apos;t telling you. I&apos;ll reply within a day with an
@@ -101,7 +101,7 @@ export default function ContactPage() {
           as="p"
           delay={0.16}
           y={16}
-          className="mt-5 text-xs leading-relaxed text-[#A9ADB7]/70 sm:text-sm"
+          className="mt-5 text-xs leading-relaxed text-[#CBD5E1] sm:text-sm"
         >
           Usually replies within 24 hours · Remote · Based in Pakistan, working
           with clients worldwide
@@ -120,13 +120,13 @@ export default function ContactPage() {
                     key={label}
                     href={href}
                     {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-                    className="group flex items-center gap-4 rounded-[20px] border border-[#343944] bg-[#1C2028] px-5 py-4 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-[#D4A037]/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
+                    className="group flex items-center gap-4 rounded-[20px] border border-[#48505E] bg-[#1C2028] px-5 py-4 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-[#D4A037]/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
                   >
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#D4A037]/15 text-[#D4A037]">
                       <Icon size={19} aria-hidden="true" />
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-[#A9ADB7]/55">
+                      <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-[#D1D5DB]/55">
                         {label}
                       </span>
                       <span className="block truncate text-[15px] font-medium text-[#F5F6F8]">
@@ -157,7 +157,7 @@ export default function ContactPage() {
                     className={
                       "flex gap-5 py-5 " +
                       (i < NEXT_STEPS.length - 1
-                        ? "border-b border-[#343944]"
+                        ? "border-b border-[#48505E]"
                         : "")
                     }
                   >
@@ -168,7 +168,7 @@ export default function ContactPage() {
                       <span className="block font-medium text-[#F5F6F8]">
                         {step.title}
                       </span>
-                      <span className="mt-1 block leading-relaxed text-[#A9ADB7]/70">
+                      <span className="mt-1 block leading-relaxed text-[#D1D5DB]">
                         {step.text}
                       </span>
                     </span>
@@ -180,11 +180,11 @@ export default function ContactPage() {
 
           {/* Right: the form */}
           <FadeIn y={32} delay={0.1}>
-            <div className="rounded-[28px] border border-[#343944] bg-[#1C2028] p-6 sm:rounded-[32px] sm:p-8">
+            <div className="rounded-[28px] border border-[#48505E] bg-[#1C2028] p-6 sm:rounded-[32px] sm:p-8">
               <h2 className="font-display text-2xl font-semibold text-[#F5F6F8]">
                 Send a message
               </h2>
-              <p className="mb-7 mt-2 leading-relaxed text-[#A9ADB7]/70">
+              <p className="mb-7 mt-2 leading-relaxed text-[#D1D5DB]">
                 Three fields, one minute. Your message comes straight to me —
                 no assistants, no ticket system.
               </p>
