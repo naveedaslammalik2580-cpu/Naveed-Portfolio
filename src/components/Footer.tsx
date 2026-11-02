@@ -14,28 +14,33 @@ const contactButtonClass =
   "hover:bg-[#D1D5DB] hover:text-[#14161B] focus-visible:outline focus-visible:outline-2 " +
   "focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]";
 
-export default function Footer() {
+export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
   return (
     <footer id="contact" className="relative overflow-hidden bg-[#14161B]">
-      {/* Background photo (anchored low) + dimming overlays */}
-      <div
-        className="pointer-events-none absolute inset-0 bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: "url('/footer-bg.webp')",
-          backgroundPosition: "center 85%",
-        }}
-        aria-hidden="true"
-      />
-      {/* less image, more dark: solid wash + bottom fade into pure #14161B so the footer ends dark */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(20,22,27,0.66) 0%, rgba(20,22,27,0.52) 45%, rgba(20,22,27,0.9) 80%, #14161B 100%)",
-        }}
-        aria-hidden="true"
-      />
+      {!hideCta && (
+        <>
+          {/* Background photo (anchored low) + dimming overlays */}
+          <div
+            className="pointer-events-none absolute inset-0 bg-cover bg-no-repeat"
+            style={{
+              backgroundImage: "url('/footer-bg.webp')",
+              backgroundPosition: "center 85%",
+            }}
+            aria-hidden="true"
+          />
+          {/* less image, more dark: solid wash + bottom fade into pure #14161B so the footer ends dark */}
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(20,22,27,0.66) 0%, rgba(20,22,27,0.52) 45%, rgba(20,22,27,0.9) 80%, #14161B 100%)",
+            }}
+            aria-hidden="true"
+          />
+        </>
+      )}
 
+      {!hideCta && (
       <div className="relative mx-auto max-w-4xl px-5 pb-20 pt-24 text-center sm:px-8 sm:pt-28">
         {/* Heading */}
         <FadeIn
@@ -97,6 +102,35 @@ export default function Footer() {
           </div>
         </FadeIn>
       </div>
+      )}
+
+      {/* On /contact the big CTA is redundant: keep only a compact row of
+          direct contact links above a subtle divider. */}
+      {hideCta && (
+        <div className="relative mx-auto max-w-4xl px-5 pt-12 sm:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-3 border-t border-[#48505E]/60 pt-10">
+            <a href={`mailto:${EMAIL}`} className={contactButtonClass}>
+              <Mail size={18} /> Email
+            </a>
+            <a
+              href={LINKEDIN}
+              target="_blank"
+              rel="noreferrer"
+              className={contactButtonClass}
+            >
+              <Linkedin size={18} /> LinkedIn
+            </a>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noreferrer"
+              className={contactButtonClass}
+            >
+              <FaWhatsapp size={18} /> WhatsApp
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* Bottom bar: copyright + back-to-top, grouped and centered */}
       <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-5 px-5 pb-10 sm:px-8">

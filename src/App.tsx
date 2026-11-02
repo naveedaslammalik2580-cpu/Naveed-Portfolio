@@ -56,7 +56,7 @@ export default function App() {
       <main className="bg-[#14161B]" style={{ overflowX: "clip" }}>
         <ContactHeader />
         <ContactPage />
-        <Footer />
+        <Footer hideCta />
       </main>
     );
   }

@@ -11,7 +11,7 @@ const fieldClass =
   "w-full rounded-2xl bg-[#14161B]/95 backdrop-blur-sm border border-[#48505E] " +
   "px-5 py-4 text-[#D1D5DB] placeholder:text-[#CBD5E1]/75 outline-none " +
   "shadow-[0_6px_20px_-8px_rgba(0,0,0,0.7)] transition-colors " +
-  "focus:border-[#D1D5DB]/70 focus:ring-1 focus:ring-[#D1D5DB]/40";
+  "focus:border-[#D4A037] focus:ring-1 focus:ring-[#D4A037]/40";
 
 /** The message form — lives on the /contact page (moved out of the footer). */
 export default function ContactForm() {
@@ -76,41 +76,56 @@ export default function ContactForm() {
         aria-hidden="true"
       />
 
-      <label htmlFor="contact-name" className="sr-only">
-        Your name
-      </label>
-      <input
-        id="contact-name"
-        type="text"
-        name="name"
-        required
-        placeholder="Your name"
-        className={fieldClass}
-      />
+      <div>
+        <label
+          htmlFor="contact-name"
+          className="mb-2 block text-sm font-medium text-[#F5F6F8]"
+        >
+          Your name
+        </label>
+        <input
+          id="contact-name"
+          type="text"
+          name="name"
+          required
+          placeholder="Your name"
+          className={fieldClass}
+        />
+      </div>
 
-      <label htmlFor="contact-email" className="sr-only">
-        Your email
-      </label>
-      <input
-        id="contact-email"
-        type="email"
-        name="email"
-        required
-        placeholder="Your email"
-        className={fieldClass}
-      />
+      <div>
+        <label
+          htmlFor="contact-email"
+          className="mb-2 block text-sm font-medium text-[#F5F6F8]"
+        >
+          Your email
+        </label>
+        <input
+          id="contact-email"
+          type="email"
+          name="email"
+          required
+          placeholder="Your email"
+          className={fieldClass}
+        />
+      </div>
 
-      <label htmlFor="contact-message" className="sr-only">
-        Tell me about your project
-      </label>
-      <textarea
-        id="contact-message"
-        name="message"
-        required
-        rows={5}
-        placeholder="Tell me about your project"
-        className={fieldClass + " resize-none"}
-      />
+      <div>
+        <label
+          htmlFor="contact-message"
+          className="mb-2 block text-sm font-medium text-[#F5F6F8]"
+        >
+          Tell me about your project
+        </label>
+        <textarea
+          id="contact-message"
+          name="message"
+          required
+          rows={5}
+          placeholder="Tell me about your project"
+          className={fieldClass + " resize-none"}
+        />
+      </div>
 
       {status === "error" && (
         <p role="alert" className="text-sm text-red-400">
