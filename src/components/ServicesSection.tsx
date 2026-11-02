@@ -108,7 +108,7 @@ export default function ServicesSection() {
               for it.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-[var(--gold-solid)] px-6 py-3 sm:px-8 sm:py-3.5 font-medium text-[#0C0C0C] transition-colors duration-200 hover:bg-[var(--gold-solid-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0C0C0C]"
               style={{ fontSize: "clamp(1rem, 1.8vw, 1.3rem)" }}
             >

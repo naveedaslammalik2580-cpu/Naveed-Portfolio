@@ -67,7 +67,7 @@ export default function AboutSection() {
             {ABOUT_PARAGRAPH_3}
           </FadeIn>
 
-          <ContactButton label="Let's Talk" href="#contact" />
+          <ContactButton label="Let's Talk" href="/contact" />
         </div>
       </div>
     </section>

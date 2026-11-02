@@ -10,11 +10,11 @@ const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Work", href: "/work" },
   { label: "Services", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 // Preserve the existing project-enquiry action until a booking URL is supplied.
-const BOOKING_URL = "mailto:lifeislove975@gmail.com?subject=Project%20enquiry";
+const BOOKING_URL = "mailto:naveed.aslam0119@gmail.com?subject=Project%20enquiry";
 
 export default function HeroSection() {
   return (

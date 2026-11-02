@@ -2,7 +2,7 @@ const LINKS = [
   { label: "About", href: "/#about" },
   { label: "Work", href: "/work", active: true },
   { label: "Services", href: "/#skills" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 /** Static header for the standalone Work page, where the home page's
@@ -48,7 +48,7 @@ export default function WorkHeader() {
         </ul>
 
         <a
-          href="/#contact"
+          href="/contact"
           className="inline-flex shrink-0 items-center rounded-full px-5 py-2 text-sm font-medium uppercase tracking-widest text-[#0C0C0C] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
           style={{
             background: "var(--gold-gradient)",

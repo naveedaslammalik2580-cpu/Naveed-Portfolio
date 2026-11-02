@@ -6,11 +6,11 @@ type ContactButtonProps = {
 
 /**
  * Filled gradient pill CTA. Renders as an anchor so it can point at a mailto:
- * or contact section.
+ * or the contact page.
  */
 export default function ContactButton({
   label = "Let's Talk",
-  href = "#contact",
+  href = "/contact",
   className = "",
 }: ContactButtonProps) {
   return (

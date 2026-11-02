@@ -143,7 +143,7 @@ export default function WorkPage() {
               the right person for it.
             </p>
             <a
-              href="/#contact"
+              href="/contact"
               className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium uppercase tracking-wider text-[#0C0C0C] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
               style={{
                 background: "var(--gold-gradient)",
@@ -305,7 +305,7 @@ function ProjectBlock({
                       className="!px-7 !py-3 text-sm sm:!px-8"
                     />
                     <a
-                      href="/#contact"
+                      href="/contact"
                       className="inline-flex items-center gap-2 py-3 text-sm font-medium text-[#E0B44A] transition-opacity duration-200 hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C6902E]"
                     >
                       Start something similar <ArrowRight size={16} aria-hidden="true" />
