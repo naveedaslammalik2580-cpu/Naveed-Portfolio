@@ -47,19 +47,19 @@ export default function HeroProductVisual({ children }: { children: ReactNode })
         <svg className={styles.signals} viewBox="0 0 540 540" fill="none" aria-hidden="true">
           {/* Two signals travelling the main orbit ellipse, offset from each other */}
           <g>
-            <circle r="6" fill="#D4A037" opacity="0.16" />
-            <circle r="2.2" fill="#D4A037" />
+            <circle r="5" fill="#D4A037" opacity="0.12" />
+            <circle r="1.4" fill="#D4A037" />
             <animateMotion dur="15s" begin="-2s" repeatCount="indefinite" path={ORBIT_ELLIPSE} />
           </g>
           <g>
-            <circle r="6" fill="#D4A037" opacity="0.16" />
-            <circle r="2.2" fill="#D4A037" />
+            <circle r="5" fill="#D4A037" opacity="0.12" />
+            <circle r="1.4" fill="#D4A037" />
             <animateMotion dur="18s" begin="-11s" repeatCount="indefinite" path={ORBIT_ELLIPSE} />
           </g>
           {/* One signal gliding along a connection sweep, fading at both ends */}
           <g className={styles.signalPath} opacity="0">
-            <circle r="6" fill="#D4A037" opacity="0.16" />
-            <circle r="2.2" fill="#D4A037" />
+            <circle r="5" fill="#D4A037" opacity="0.12" />
+            <circle r="1.4" fill="#D4A037" />
             <animateMotion dur="12s" begin="-5s" repeatCount="indefinite" path={ORBIT_SWEEP} />
             <animate
               attributeName="opacity"

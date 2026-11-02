@@ -63,7 +63,7 @@ export default function HeroSection() {
           </div>
         </FadeIn>
 
-        <div className="relative mx-auto grid w-full max-w-[1440px] flex-1 grid-cols-1 items-center px-5 pb-10 pt-12 sm:px-8 sm:pt-16 md:px-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:py-20 xl:py-24">
+        <div className="relative mx-auto grid w-full max-w-[1440px] flex-1 grid-cols-1 items-center px-5 pb-10 pt-12 sm:px-8 sm:pt-16 md:px-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:pt-10 lg:pb-20 xl:pt-14 xl:pb-24">
           <div className="relative z-10 min-w-0">
             <FadeIn
               as="p"
@@ -173,9 +173,9 @@ function Globe() {
         phi: 0,
         theta: 0.25,
         dark: 1,
-        diffuse: 1.2,
+        diffuse: 1.05,
         mapSamples: 16000,
-        mapBrightness: 9,
+        mapBrightness: 9.5,
         baseColor: [0.09, 0.11, 0.15],
         markerColor: [0.75, 0.85, 1],
         glowColor: [0.45, 0.4, 0.32],
@@ -252,7 +252,7 @@ function Globe() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 aspect-square w-full opacity-60"
+      className="pointer-events-none absolute inset-0 aspect-square w-full opacity-70"
       style={{ maskImage: "radial-gradient(circle, black 35%, transparent 72%)" }}
     >
       <canvas
