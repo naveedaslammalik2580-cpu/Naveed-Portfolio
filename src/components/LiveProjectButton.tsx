@@ -21,7 +21,7 @@ export default function LiveProjectButton({
         aria-disabled="true"
         className={
           BASE_CLASS +
-          "cursor-not-allowed border-[#A8B3C3]/30 text-[#A8B3C3]/40 " +
+          "cursor-not-allowed border-[#A9ADB7]/30 text-[#A9ADB7]/40 " +
           className
         }
       >
@@ -37,8 +37,8 @@ export default function LiveProjectButton({
       rel="noreferrer"
       className={
         BASE_CLASS +
-        "border-[#A8B3C3] text-[#A8B3C3] transition-colors duration-200 hover:bg-[#A8B3C3]/10 " +
-        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A8B3C3] " +
+        "border-[#A9ADB7] text-[#A9ADB7] transition-colors duration-200 hover:bg-[#A9ADB7]/10 " +
+        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9ADB7] " +
         className
       }
     >

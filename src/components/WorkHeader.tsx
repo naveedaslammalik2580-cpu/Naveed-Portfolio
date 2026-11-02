@@ -12,18 +12,18 @@ export default function WorkHeader() {
     <header
       className="sticky inset-x-0 top-0 z-40"
       style={{
-        background: "rgba(15,23,42,0.9)",
+        background: "rgba(20,22,27,0.9)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        borderBottom: "1px solid #374151",
+        borderBottom: "1px solid #343944",
         boxShadow: "0 8px 24px -12px rgba(0,0,0,0.5)",
       }}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 md:px-10">
         <a
           href="/"
-          className="font-display text-sm font-bold uppercase tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D6A13A] sm:text-base"
-          style={{ color: "#D6A13A" }}
+          className="font-display text-sm font-bold uppercase tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037] sm:text-base"
+          style={{ color: "#D4A037" }}
         >
           Naveed Aslam
         </a>
@@ -35,10 +35,10 @@ export default function WorkHeader() {
                 href={link.href}
                 aria-current={link.active ? "page" : undefined}
                 className={
-                  "text-sm font-bold uppercase tracking-wider transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D6A13A] " +
+                  "text-sm font-bold uppercase tracking-wider transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037] " +
                   (link.active
-                    ? "text-[#D6A13A] underline decoration-[#D6A13A] decoration-2 underline-offset-8"
-                    : "text-[#A8B3C3]")
+                    ? "text-[#D4A037] underline decoration-[#D4A037] decoration-2 underline-offset-8"
+                    : "text-[#A9ADB7]")
                 }
               >
                 {link.label}
@@ -49,7 +49,7 @@ export default function WorkHeader() {
 
         <a
           href="/contact"
-          className="inline-flex shrink-0 items-center rounded-full px-5 py-2 text-sm font-medium uppercase tracking-widest text-[#111827] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
+          className="inline-flex shrink-0 items-center rounded-full px-5 py-2 text-sm font-medium uppercase tracking-widest text-[#14161B] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
           style={{
             background: "var(--gold-gradient)",
             boxShadow: "var(--gold-shadow)",

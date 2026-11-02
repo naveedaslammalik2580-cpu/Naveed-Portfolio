@@ -66,13 +66,13 @@ export default function WorkPage() {
   };
 
   return (
-    <div className="relative overflow-hidden bg-[#111827]">
+    <div className="relative overflow-hidden bg-[#14161B]">
       {/* soft radial wash, echoing the home hero */}
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-[560px]"
         style={{
           background:
-            "radial-gradient(ellipse at 88% 0%, #1F2937 0%, rgba(17,24,39,0) 62%)",
+            "radial-gradient(ellipse at 88% 0%, #1C2028 0%, rgba(20,22,27,0) 62%)",
         }}
         aria-hidden="true"
       />
@@ -81,7 +81,7 @@ export default function WorkPage() {
         <FadeIn
           as="p"
           y={16}
-          className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#D6A13A] sm:text-sm"
+          className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#D4A037] sm:text-sm"
         >
           Selected Work
         </FadeIn>
@@ -89,16 +89,16 @@ export default function WorkPage() {
         <FadeIn
           as="h1"
           y={32}
-          className="font-display max-w-3xl text-[clamp(2.4rem,6vw,4.7rem)] font-semibold leading-[1.04] tracking-tight text-[#F9FAFB]"
+          className="font-display max-w-3xl text-[clamp(2.4rem,6vw,4.7rem)] font-semibold leading-[1.04] tracking-tight text-[#F5F6F8]"
         >
-          Work that&apos;s live — <span className="text-[#D6A13A]">and working.</span>
+          Work that&apos;s live — <span className="text-[#D4A037]">and working.</span>
         </FadeIn>
 
         <FadeIn
           as="p"
           delay={0.1}
           y={24}
-          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#A8B3C3]/80 sm:text-lg"
+          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#A9ADB7]/80 sm:text-lg"
         >
           Real projects, shown one by one with their details and screenshots.
           Where a project is public, the button takes you to the actual product
@@ -111,9 +111,9 @@ export default function WorkPage() {
               <a
                 key={project.slug}
                 href={`#${project.slug}`}
-                className="rounded-full border border-[#374151] bg-[#1F2937] px-4 py-2 text-sm text-[#A8B3C3] transition-colors duration-200 hover:border-[#D6A13A]/60 hover:text-[#F9FAFB] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
+                className="rounded-full border border-[#343944] bg-[#1C2028] px-4 py-2 text-sm text-[#A9ADB7] transition-colors duration-200 hover:border-[#D4A037]/60 hover:text-[#F5F6F8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
               >
-                <span className="mr-2 font-semibold text-[#D6A13A]">{project.n}</span>
+                <span className="mr-2 font-semibold text-[#D4A037]">{project.n}</span>
                 {project.name}
               </a>
             ))}
@@ -134,17 +134,17 @@ export default function WorkPage() {
 
       <section className="relative mx-auto max-w-6xl px-5 pb-24 pt-4 sm:px-8 md:px-10">
         <FadeIn y={32}>
-          <div className="rounded-[32px] border border-[#374151] bg-[#1F2937] px-6 py-12 text-center sm:rounded-[40px] sm:px-10 sm:py-16">
-            <h2 className="font-display mx-auto max-w-2xl text-3xl font-semibold leading-tight text-[#F9FAFB] sm:text-4xl">
+          <div className="rounded-[32px] border border-[#343944] bg-[#1C2028] px-6 py-12 text-center sm:rounded-[40px] sm:px-10 sm:py-16">
+            <h2 className="font-display mx-auto max-w-2xl text-3xl font-semibold leading-tight text-[#F5F6F8] sm:text-4xl">
               Have a project like one of these in mind?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-[#A8B3C3]/75">
+            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-[#A9ADB7]/75">
               Tell me the problem — I&apos;ll tell you honestly whether I&apos;m
               the right person for it.
             </p>
             <a
               href="/contact"
-              className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium uppercase tracking-wider text-[#111827] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
+              className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium uppercase tracking-wider text-[#14161B] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
               style={{
                 background: "var(--gold-gradient)",
                 boxShadow: "var(--gold-shadow)",
@@ -158,7 +158,7 @@ export default function WorkPage() {
 
       {lightbox && (
         <div
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-[#0F172A]/90 p-4"
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-[#14161B]/90 p-4"
           onClick={() => setLightbox(null)}
           role="dialog"
           aria-modal="true"
@@ -167,7 +167,7 @@ export default function WorkPage() {
           <button
             type="button"
             onClick={() => setLightbox(null)}
-            className="absolute right-4 top-4 z-10 rounded-full border border-[#F9FAFB]/30 bg-[#0F172A]/40 p-2.5 text-[#F9FAFB] hover:bg-[#F9FAFB]/10 sm:right-5 sm:top-5"
+            className="absolute right-4 top-4 z-10 rounded-full border border-[#F5F6F8]/30 bg-[#14161B]/40 p-2.5 text-[#F5F6F8] hover:bg-[#F5F6F8]/10 sm:right-5 sm:top-5"
             aria-label="Close screenshot viewer"
           >
             <X size={22} />
@@ -189,7 +189,7 @@ export default function WorkPage() {
                     : current,
                 );
               }}
-              className="absolute left-2 z-10 rounded-full border border-[#F9FAFB]/30 bg-[#0F172A]/40 p-2.5 text-[#F9FAFB] hover:bg-[#F9FAFB]/10 sm:left-6"
+              className="absolute left-2 z-10 rounded-full border border-[#F5F6F8]/30 bg-[#14161B]/40 p-2.5 text-[#F5F6F8] hover:bg-[#F5F6F8]/10 sm:left-6"
               aria-label="Previous screenshot"
             >
               <ChevronLeft size={26} />
@@ -218,14 +218,14 @@ export default function WorkPage() {
                     : current,
                 );
               }}
-              className="absolute right-2 z-10 rounded-full border border-[#F9FAFB]/30 bg-[#0F172A]/40 p-2.5 text-[#F9FAFB] hover:bg-[#F9FAFB]/10 sm:right-6"
+              className="absolute right-2 z-10 rounded-full border border-[#F5F6F8]/30 bg-[#14161B]/40 p-2.5 text-[#F5F6F8] hover:bg-[#F5F6F8]/10 sm:right-6"
               aria-label="Next screenshot"
             >
               <ChevronRight size={26} />
             </button>
           )}
 
-          <span className="absolute bottom-5 text-sm uppercase tracking-widest text-[#F9FAFB]/70">
+          <span className="absolute bottom-5 text-sm uppercase tracking-widest text-[#F5F6F8]/70">
             {lightbox.index + 1} / {lightbox.images.length}
           </span>
         </div>
@@ -246,38 +246,38 @@ function ProjectBlock({
   return (
     <article id={project.slug} className="scroll-mt-24 py-8 sm:py-10">
       <FadeIn y={36}>
-        <div className="rounded-[32px] border border-[#374151] bg-[#1F2937] p-5 shadow-[0_24px_60px_-32px_rgba(0,0,0,0.8)] sm:rounded-[40px] sm:p-8 lg:p-10">
+        <div className="rounded-[32px] border border-[#343944] bg-[#1C2028] p-5 shadow-[0_24px_60px_-32px_rgba(0,0,0,0.8)] sm:rounded-[40px] sm:p-8 lg:p-10">
           <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:gap-12">
             <div className={flip ? "lg:order-2" : ""}>
               <div className="flex items-center gap-4">
-                <span className="font-display text-lg font-semibold tracking-[0.18em] text-[#D6A13A]">
+                <span className="font-display text-lg font-semibold tracking-[0.18em] text-[#D4A037]">
                   {project.n}
                 </span>
-                <span className="h-px flex-1 bg-[#A8B3C3]/10" aria-hidden="true" />
-                <span className="text-right text-[11px] font-semibold uppercase tracking-[0.14em] text-[#A8B3C3]/55">
+                <span className="h-px flex-1 bg-[#A9ADB7]/10" aria-hidden="true" />
+                <span className="text-right text-[11px] font-semibold uppercase tracking-[0.14em] text-[#A9ADB7]/55">
                   Project {project.n}
                 </span>
               </div>
 
-              <h2 className="font-display mt-5 text-3xl font-semibold leading-tight text-[#F9FAFB] sm:text-4xl">
+              <h2 className="font-display mt-5 text-3xl font-semibold leading-tight text-[#F5F6F8] sm:text-4xl">
                 {project.name}
               </h2>
 
-              <span className="mt-4 inline-block rounded-full border border-[#D6A13A]/70 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#D6A13A]">
+              <span className="mt-4 inline-block rounded-full border border-[#D4A037]/70 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#D4A037]">
                 {project.category}
               </span>
 
-              <p className="mt-6 leading-relaxed text-[#A8B3C3]">
+              <p className="mt-6 leading-relaxed text-[#A9ADB7]">
                 {project.introduction}
               </p>
 
-              <h3 className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-[#F9FAFB]">
+              <h3 className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-[#F5F6F8]">
                 What I built
               </h3>
               <ul className="mt-4 space-y-3">
                 {project.built.map((item) => (
-                  <li key={item} className="flex gap-3 leading-relaxed text-[#A8B3C3]/80">
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#D6A13A]/15 text-[#D6A13A]">
+                  <li key={item} className="flex gap-3 leading-relaxed text-[#A9ADB7]/80">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#D4A037]/15 text-[#D4A037]">
                       <Check size={13} strokeWidth={2.5} aria-hidden="true" />
                     </span>
                     <span>{item}</span>
@@ -289,7 +289,7 @@ function ProjectBlock({
                 {project.tech.map((item) => (
                   <span
                     key={item}
-                    className="rounded-md border border-[#374151] bg-[#1F2937] px-2.5 py-1.5 text-xs text-[#A8B3C3]/75"
+                    className="rounded-md border border-[#343944] bg-[#1C2028] px-2.5 py-1.5 text-xs text-[#A9ADB7]/75"
                   >
                     {item}
                   </span>
@@ -306,13 +306,13 @@ function ProjectBlock({
                     />
                     <a
                       href="/contact"
-                      className="inline-flex items-center gap-2 py-3 text-sm font-medium text-[#D6A13A] transition-opacity duration-200 hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D6A13A]"
+                      className="inline-flex items-center gap-2 py-3 text-sm font-medium text-[#D4A037] transition-opacity duration-200 hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4A037]"
                     >
                       Start something similar <ArrowRight size={16} aria-hidden="true" />
                     </a>
                   </div>
                 ) : (
-                  <p className="inline-block rounded-lg border border-dashed border-[#374151] px-4 py-3 text-sm italic leading-relaxed text-[#A8B3C3]/60">
+                  <p className="inline-block rounded-lg border border-dashed border-[#343944] px-4 py-3 text-sm italic leading-relaxed text-[#A9ADB7]/60">
                     {project.accessNote}
                   </p>
                 )}
@@ -338,7 +338,7 @@ function ProjectBlock({
                 ))}
               </div>
 
-              <p className="mt-3 text-center text-[11px] uppercase tracking-[0.16em] text-[#A8B3C3]/45">
+              <p className="mt-3 text-center text-[11px] uppercase tracking-[0.16em] text-[#A9ADB7]/45">
                 Select a screenshot to enlarge
               </p>
             </div>
@@ -366,17 +366,17 @@ function ScreenshotFrame({
     <button
       type="button"
       onClick={onClick}
-      className="group block w-full overflow-hidden rounded-[22px] border border-[#374151] bg-[#0F172A] text-left shadow-[0_18px_40px_-24px_rgba(0,0,0,0.9)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
+      className="group block w-full overflow-hidden rounded-[22px] border border-[#343944] bg-[#14161B] text-left shadow-[0_18px_40px_-24px_rgba(0,0,0,0.9)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A037]"
       aria-label={`Enlarge screenshot: ${image.alt}`}
     >
       {label && (
-        <span className="flex items-center gap-2 border-b border-[#374151] bg-[#0F172A] px-4 py-2.5">
+        <span className="flex items-center gap-2 border-b border-[#343944] bg-[#14161B] px-4 py-2.5">
           <span className="flex gap-1.5" aria-hidden="true">
-            <i className="block h-2.5 w-2.5 rounded-full bg-[#374151]" />
-            <i className="block h-2.5 w-2.5 rounded-full bg-[#374151]" />
-            <i className="block h-2.5 w-2.5 rounded-full bg-[#374151]" />
+            <i className="block h-2.5 w-2.5 rounded-full bg-[#343944]" />
+            <i className="block h-2.5 w-2.5 rounded-full bg-[#343944]" />
+            <i className="block h-2.5 w-2.5 rounded-full bg-[#343944]" />
           </span>
-          <span className="truncate text-xs text-[#A8B3C3]/50">{label}</span>
+          <span className="truncate text-xs text-[#A9ADB7]/50">{label}</span>
         </span>
       )}
       <span className={"block overflow-hidden " + (compact ? "aspect-[16/10]" : "aspect-[16/10]")}>
