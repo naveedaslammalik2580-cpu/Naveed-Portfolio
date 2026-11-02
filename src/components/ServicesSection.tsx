@@ -26,12 +26,12 @@ export default function ServicesSection() {
   return (
     <section
       id="skills"
-      className="bg-white rounded-t-[40px] px-5 py-20 sm:rounded-t-[50px] sm:px-8 sm:py-24 md:rounded-t-[60px] md:px-10 md:py-32"
+      className="bg-[#1F2937] rounded-t-[40px] px-5 py-20 sm:rounded-t-[50px] sm:px-8 sm:py-24 md:rounded-t-[60px] md:px-10 md:py-32"
     >
       <FadeIn
         as="h2"
         y={40}
-        className="font-display mb-14 text-center font-bold uppercase text-[#0C0C0C] sm:mb-16 md:mb-24"
+        className="font-display mb-14 text-center font-bold uppercase text-[#F9FAFB] sm:mb-16 md:mb-24"
         style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
       >
         Two ways I get hired.
@@ -63,30 +63,29 @@ export default function ServicesSection() {
               }
             >
               <span
-                className="font-display tabular-nums shrink-0 font-bold leading-none text-[#0C0C0C]"
+                className="font-display tabular-nums shrink-0 font-bold leading-none text-[#D6A13A]"
                 style={{ fontSize: "clamp(2rem, 8vw, 120px)" }}
               >
                 {s.n}
               </span>
               <div className="flex flex-col gap-3 pt-1 sm:pt-2 md:pt-3">
                 <h3
-                  className="font-display font-semibold uppercase text-[#0C0C0C]"
+                  className="font-display font-semibold uppercase text-[#F9FAFB]"
                   style={{ fontSize: "clamp(1rem, 2.2vw, 2.1rem)" }}
                 >
                   {s.name}
                 </h3>
                 <p
-                  className="font-light leading-relaxed text-[#0C0C0C]"
+                  className="font-light leading-relaxed text-[#A8B3C3]"
                   style={{
                     fontSize: "clamp(0.85rem, 1.6vw, 1.25rem)",
-                    opacity: 0.6,
                   }}
                 >
                   {s.desc}
                 </p>
                 <a
                   href={s.href}
-                  className="inline-flex items-center gap-2 font-medium text-[#0C0C0C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0C0C0C]"
+                  className="inline-flex items-center gap-2 font-medium text-[#F9FAFB] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
                 >
                   {s.linkLabel}
                   <ArrowRight size={18} />
@@ -100,8 +99,8 @@ export default function ServicesSection() {
             className="mt-10 flex flex-col items-start gap-4 sm:mt-12 sm:gap-5 md:mt-16"
           >
             <p
-              className="max-w-md font-light leading-relaxed text-[#0C0C0C]"
-              style={{ fontSize: "clamp(0.9rem, 1.4vw, 1.05rem)", opacity: 0.6 }}
+              className="max-w-md font-light leading-relaxed text-[#A8B3C3]"
+              style={{ fontSize: "clamp(0.9rem, 1.4vw, 1.05rem)" }}
             >
               Not sure which one you need? Tell me the problem and
               I&apos;ll tell you honestly whether I&apos;m the right person
@@ -109,7 +108,7 @@ export default function ServicesSection() {
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--gold-solid)] px-6 py-3 sm:px-8 sm:py-3.5 font-medium text-[#0C0C0C] transition-colors duration-200 hover:bg-[var(--gold-solid-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0C0C0C]"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--gold-solid)] px-6 py-3 sm:px-8 sm:py-3.5 font-medium text-[#111827] transition-colors duration-200 hover:bg-[var(--gold-solid-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
               style={{ fontSize: "clamp(1rem, 1.8vw, 1.3rem)" }}
             >
               Let&apos;s talk

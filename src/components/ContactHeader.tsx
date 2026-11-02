@@ -11,18 +11,18 @@ export default function ContactHeader() {
     <header
       className="sticky inset-x-0 top-0 z-40"
       style={{
-        background: "rgba(12,12,12,0.88)",
+        background: "rgba(15,23,42,0.9)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        borderBottom: "1px solid rgba(215,226,234,0.12)",
+        borderBottom: "1px solid #374151",
         boxShadow: "0 8px 24px -12px rgba(0,0,0,0.5)",
       }}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 md:px-10">
         <a
           href="/"
-          className="font-display text-sm font-bold uppercase tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C6902E] sm:text-base"
-          style={{ color: "#C6902E" }}
+          className="font-display text-sm font-bold uppercase tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D6A13A] sm:text-base"
+          style={{ color: "#D6A13A" }}
         >
           Naveed Aslam
         </a>
@@ -34,10 +34,10 @@ export default function ContactHeader() {
                 href={link.href}
                 aria-current={link.active ? "page" : undefined}
                 className={
-                  "text-sm font-bold uppercase tracking-wider transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C6902E] " +
+                  "text-sm font-bold uppercase tracking-wider transition-opacity duration-200 hover:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D6A13A] " +
                   (link.active
-                    ? "text-[#E0B44A] underline decoration-[#C6902E] decoration-2 underline-offset-8"
-                    : "text-[#D7E2EA]")
+                    ? "text-[#D6A13A] underline decoration-[#D6A13A] decoration-2 underline-offset-8"
+                    : "text-[#A8B3C3]")
                 }
               >
                 {link.label}
@@ -48,7 +48,7 @@ export default function ContactHeader() {
 
         <a
           href="/work"
-          className="inline-flex shrink-0 items-center rounded-full px-5 py-2 text-sm font-medium uppercase tracking-widest text-[#0C0C0C] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
+          className="inline-flex shrink-0 items-center rounded-full px-5 py-2 text-sm font-medium uppercase tracking-widest text-[#111827] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
           style={{
             background: "var(--gold-gradient)",
             boxShadow: "var(--gold-shadow)",

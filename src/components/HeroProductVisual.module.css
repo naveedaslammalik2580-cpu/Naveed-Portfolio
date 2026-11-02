@@ -40,12 +40,12 @@
   gap: 7px;
   width: 36%;
   padding: 8px 9px;
-  border: 1px solid rgba(215, 226, 234, .14);
-  border-top-color: rgba(198, 144, 46, .26);
+  border: 1px solid #374151;
+  border-top-color: rgba(214, 161, 58, .26);
   border-radius: 11px;
-  background: linear-gradient(135deg, rgba(24, 31, 42, .92), rgba(12, 16, 23, .88));
+  background: linear-gradient(135deg, rgba(31, 41, 55, .95), rgba(15, 23, 42, .92));
   backdrop-filter: blur(12px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, .22), inset 0 1px rgba(198, 144, 46, .04);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .22), inset 0 1px rgba(214, 161, 58, .04);
 }
 
 .icon {
@@ -54,15 +54,15 @@
   flex-shrink: 0;
   width: 22px;
   height: 22px;
-  border: 1px solid rgba(198, 144, 46, .16);
+  border: 1px solid rgba(214, 161, 58, .16);
   border-radius: 7px;
-  background: rgba(198, 144, 46, .06);
+  background: rgba(214, 161, 58, .06);
   color: var(--gold-solid);
 }
 
 .icon svg { width: 13px; height: 13px; stroke-width: 1.5; }
-.title { font-family: "Space Grotesk", sans-serif; font-size: 10.5px; font-weight: 700; line-height: 1.4; letter-spacing: .04em; color: #d7e2ea; }
-.description { margin-top: 2px; font-size: 9.5px; line-height: 1.45; color: rgba(215, 226, 234, .56); }
+.title { font-family: "Space Grotesk", sans-serif; font-size: 10.5px; font-weight: 700; line-height: 1.4; letter-spacing: .04em; color: #A8B3C3; }
+.description { margin-top: 2px; font-size: 9.5px; line-height: 1.45; color: rgba(168, 179, 195, .85); }
 .applications { top: 6%; left: 11%; }
 .websites { top: 0; right: 2%; }
 .platforms { top: 23%; left: 7%; }
@@ -72,20 +72,20 @@
 .secondary { position: absolute; z-index: 3; width: 46%; left: 0; top: 37%; opacity: .72; filter: saturate(.8) brightness(.9); }
 .browser {
   overflow: hidden;
-  border: 1px solid rgba(215, 226, 234, .24);
-  border-top-color: rgba(198, 144, 46, .48);
+  border: 1px solid #374151;
+  border-top-color: rgba(214, 161, 58, .48);
   border-radius: 10px;
-  background: #0c1017;
-  box-shadow: 0 22px 48px rgba(0, 0, 0, .65), 0 0 24px rgba(198, 144, 46, .05);
+  background: #0F172A;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, .65), 0 0 24px rgba(214, 161, 58, .05);
 }
-.chrome { display: flex; align-items: center; gap: 10px; height: 27px; padding: 0 10px; border-bottom: 1px solid rgba(215, 226, 234, .09); background: linear-gradient(110deg, #1c2430, #12161e); }
+.chrome { display: flex; align-items: center; gap: 10px; height: 27px; padding: 0 10px; border-bottom: 1px solid #374151; background: linear-gradient(110deg, #1F2937, #1F2937); }
 .dots { display: flex; gap: 3px; }
-.dots i { width: 4px; height: 4px; border-radius: 50%; background: rgba(215, 226, 234, .3); }
-.dots i:first-child { background: rgba(198, 144, 46, .65); }
-.address { display: flex; align-items: center; gap: 5px; font-size: 8px; letter-spacing: .03em; color: rgba(215, 226, 234, .64); }
+.dots i { width: 4px; height: 4px; border-radius: 50%; background: #374151; }
+.dots i:first-child { background: rgba(214, 161, 58, .65); }
+.address { display: flex; align-items: center; gap: 5px; font-size: 8px; letter-spacing: .03em; color: rgba(168, 179, 195, .9); }
 .browser img { display: block; width: 100%; height: auto; }
-.secondary .browser { border-color: rgba(215, 226, 234, .16); }
-.ground { position: absolute; z-index: 0; bottom: 1%; left: 15%; width: 80%; height: 20%; background: radial-gradient(ellipse, rgba(198, 144, 46, .09), transparent 68%); }
+.secondary .browser { border-color: #374151; }
+.ground { position: absolute; z-index: 0; bottom: 1%; left: 15%; width: 80%; height: 20%; background: radial-gradient(ellipse, rgba(214, 161, 58, .09), transparent 68%); }
 
 @media (min-width: 640px) {
   .composition { max-width: 480px; }

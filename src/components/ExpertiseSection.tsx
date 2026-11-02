@@ -79,7 +79,7 @@ const EXPERTISE: Expertise[] = [
 
 export default function ExpertiseSection() {
   return (
-    <section className="bg-[#0C0C0C] px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-32">
+    <section className="bg-[#111827] px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-32">
       <FadeIn
         as="h2"
         y={40}
@@ -93,7 +93,7 @@ export default function ExpertiseSection() {
         as="p"
         delay={0.1}
         y={24}
-        className="mx-auto mt-5 max-w-xl text-center font-normal leading-relaxed text-[#D7E2EA]/70 sm:mt-6"
+        className="mx-auto mt-5 max-w-xl text-center font-normal leading-relaxed text-[#A8B3C3]/70 sm:mt-6"
         style={{ fontSize: "clamp(0.95rem, 1.8vw, 1.2rem)" }}
       >
         Three areas, not thirty — and the work behind each one.
@@ -108,7 +108,7 @@ export default function ExpertiseSection() {
       <p className="mx-auto mt-12 max-w-6xl text-center sm:mt-16">
         <a
           href="/work"
-          className="text-sm font-medium uppercase tracking-wider text-[#C6902E] underline-offset-4 transition-opacity duration-200 hover:opacity-70 hover:underline"
+          className="text-sm font-medium uppercase tracking-wider text-[#D6A13A] underline-offset-4 transition-opacity duration-200 hover:opacity-70 hover:underline"
         >
           See what I&apos;ve built with this
           <ArrowRight size={14} className="ml-1.5 inline-block align-[-1px]" />
@@ -122,29 +122,29 @@ function ExpertiseCard({ item, delay }: { item: Expertise; delay: number }) {
   const { Icon, title, description, tech } = item;
   return (
     <FadeIn delay={delay} y={30} className="h-full">
-      <div className="group flex h-full flex-col gap-6 rounded-[32px] border-2 border-[#D7E2EA]/20 bg-[#0C0C0C] p-6 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-[var(--gold-solid)]/50 hover:shadow-[var(--gold-shadow)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:rounded-[36px] sm:p-7 md:p-8">
+      <div className="group flex h-full flex-col gap-6 rounded-[32px] border-2 border-[#374151] bg-[#111827] p-6 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-[var(--gold-solid)]/50 hover:shadow-[var(--gold-shadow)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:rounded-[36px] sm:p-7 md:p-8">
         <Icon size={30} strokeWidth={1.5} style={{ color: "var(--gold-solid)" }} />
 
         <div className="flex flex-col gap-3">
           <h3
-            className="font-display font-semibold uppercase text-[#EAF0F5]"
+            className="font-display font-semibold uppercase text-[#F9FAFB]"
             style={{ fontSize: "clamp(1.1rem, 1.8vw, 1.4rem)" }}
           >
             {title}
           </h3>
           <p
-            className="font-light leading-relaxed text-[#D7E2EA]/80"
+            className="font-light leading-relaxed text-[#A8B3C3]/80"
             style={{ fontSize: "clamp(0.85rem, 1.4vw, 1rem)" }}
           >
             {description}
           </p>
         </div>
 
-        <div className="mt-auto flex flex-wrap gap-x-4 gap-y-2 border-t border-[#D7E2EA]/15 pt-5">
+        <div className="mt-auto flex flex-wrap gap-x-4 gap-y-2 border-t border-[#374151] pt-5">
           {tech.map((t) => (
             <span
               key={t.name}
-              className="inline-flex items-center gap-1.5 text-[#D7E2EA] opacity-60 transition-opacity duration-300 group-hover:opacity-100"
+              className="inline-flex items-center gap-1.5 text-[#A8B3C3] opacity-60 transition-opacity duration-300 group-hover:opacity-100"
             >
               {t.Icon && <t.Icon size={14} className="shrink-0" />}
               <span className="text-[11px] font-medium uppercase tracking-wide">

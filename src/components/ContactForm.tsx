@@ -8,10 +8,10 @@ const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY as string;
 type Status = "idle" | "sending" | "success" | "error";
 
 const fieldClass =
-  "w-full rounded-2xl bg-[#0d0e11]/95 backdrop-blur-sm border border-[rgba(215,226,234,0.28)] " +
-  "px-5 py-4 text-[#D7E2EA] placeholder:text-[#D7E2EA]/60 outline-none " +
+  "w-full rounded-2xl bg-[#0F172A]/95 backdrop-blur-sm border border-[#374151] " +
+  "px-5 py-4 text-[#A8B3C3] placeholder:text-[#A8B3C3]/60 outline-none " +
   "shadow-[0_6px_20px_-8px_rgba(0,0,0,0.7)] transition-colors " +
-  "focus:border-[#D7E2EA]/70 focus:ring-1 focus:ring-[#D7E2EA]/40";
+  "focus:border-[#A8B3C3]/70 focus:ring-1 focus:ring-[#A8B3C3]/40";
 
 /** The message form — lives on the /contact page (moved out of the footer). */
 export default function ContactForm() {
@@ -48,16 +48,16 @@ export default function ContactForm() {
     return (
       <FadeIn delay={0.1} className="w-full">
         <div
-          className="rounded-2xl border px-6 py-10 text-[#D7E2EA]"
+          className="rounded-2xl border px-6 py-10 text-[#A8B3C3]"
           style={{
-            borderColor: "rgba(215,226,234,0.2)",
-            background: "#141518",
+            borderColor: "rgba(55,65,81,0.2)",
+            background: "#1F2937",
           }}
         >
           <p className="text-lg font-medium uppercase tracking-wide">
             Message sent — thanks!
           </p>
-          <p className="mt-2 text-sm text-[#D7E2EA]/70">
+          <p className="mt-2 text-sm text-[#A8B3C3]/70">
             I&apos;ll get back to you soon.
           </p>
         </div>
@@ -121,7 +121,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="mt-2 inline-block self-center rounded-full px-12 py-4 text-sm font-medium uppercase tracking-widest text-[#0C0C0C] transition-transform duration-200 hover:scale-[1.03] disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
+        className="mt-2 inline-block self-center rounded-full px-12 py-4 text-sm font-medium uppercase tracking-widest text-[#111827] transition-transform duration-200 hover:scale-[1.03] disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
         style={{
           background: "var(--gold-gradient)",
           boxShadow: "var(--gold-shadow)",
@@ -130,7 +130,7 @@ export default function ContactForm() {
         {status === "sending" ? "Sending..." : "Send message"}
       </button>
 
-      <p className="text-center text-xs text-[#D7E2EA]/50">
+      <p className="text-center text-xs text-[#A8B3C3]/50">
         No obligation. If I&apos;m not the right fit, I&apos;ll say so.
       </p>
     </form>

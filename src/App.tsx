@@ -43,7 +43,7 @@ export default function App() {
 
   if (workPage) {
     return (
-      <main className="bg-[#0C0C0C]" style={{ overflowX: "clip" }}>
+      <main className="bg-[#111827]" style={{ overflowX: "clip" }}>
         <WorkHeader />
         <WorkPage />
         <Footer />
@@ -53,7 +53,7 @@ export default function App() {
 
   if (contactPage) {
     return (
-      <main className="bg-[#0C0C0C]" style={{ overflowX: "clip" }}>
+      <main className="bg-[#111827]" style={{ overflowX: "clip" }}>
         <ContactHeader />
         <ContactPage />
         <Footer />
@@ -62,7 +62,7 @@ export default function App() {
   }
 
   return (
-    <main className="bg-[#0C0C0C]" style={{ overflowX: "clip" }}>
+    <main className="bg-[#111827]" style={{ overflowX: "clip" }}>
       <StickyNav />
       <HeroSection />
       <ExpertiseSection />

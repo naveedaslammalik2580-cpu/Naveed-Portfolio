@@ -59,12 +59,12 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden bg-[#0C0C0C]">
+    <div className="relative overflow-hidden bg-[#111827]">
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-[560px]"
         style={{
           background:
-            "radial-gradient(ellipse at 88% 0%, #171d27 0%, rgba(12,12,12,0) 62%)",
+            "radial-gradient(ellipse at 88% 0%, #1F2937 0%, rgba(17,24,39,0) 62%)",
         }}
         aria-hidden="true"
       />
@@ -73,7 +73,7 @@ export default function ContactPage() {
         <FadeIn
           as="p"
           y={16}
-          className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#C6902E] sm:text-sm"
+          className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#D6A13A] sm:text-sm"
         >
           Contact
         </FadeIn>
@@ -81,16 +81,16 @@ export default function ContactPage() {
         <FadeIn
           as="h1"
           y={32}
-          className="font-display max-w-3xl text-[clamp(2.4rem,6vw,4.7rem)] font-semibold leading-[1.04] tracking-tight text-[#EEF2F6]"
+          className="font-display max-w-3xl text-[clamp(2.4rem,6vw,4.7rem)] font-semibold leading-[1.04] tracking-tight text-[#F9FAFB]"
         >
-          Tell me what you&apos;re <span className="text-[#C6902E]">building.</span>
+          Tell me what you&apos;re <span className="text-[#D6A13A]">building.</span>
         </FadeIn>
 
         <FadeIn
           as="p"
           delay={0.1}
           y={24}
-          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#D7E2EA]/80 sm:text-lg"
+          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#A8B3C3]/80 sm:text-lg"
         >
           Send me the problem — what&apos;s broken, what you need built, or what
           your data isn&apos;t telling you. I&apos;ll reply within a day with an
@@ -101,7 +101,7 @@ export default function ContactPage() {
           as="p"
           delay={0.16}
           y={16}
-          className="mt-5 text-xs leading-relaxed text-[#D7E2EA]/70 sm:text-sm"
+          className="mt-5 text-xs leading-relaxed text-[#A8B3C3]/70 sm:text-sm"
         >
           Usually replies within 24 hours · Remote · Based in Pakistan, working
           with clients worldwide
@@ -111,7 +111,7 @@ export default function ContactPage() {
           {/* Left: direct ways + what happens next */}
           <div>
             <FadeIn y={28}>
-              <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-white">
+              <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F9FAFB]">
                 Reach me directly
               </h2>
               <div className="mt-5 flex flex-col gap-4">
@@ -120,20 +120,20 @@ export default function ContactPage() {
                     key={label}
                     href={href}
                     {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-                    className="group flex items-center gap-4 rounded-[20px] border border-[#D7E2EA]/15 bg-[#10141B] px-5 py-4 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-[#C6902E]/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
+                    className="group flex items-center gap-4 rounded-[20px] border border-[#374151] bg-[#1F2937] px-5 py-4 transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-[#D6A13A]/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
                   >
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#C6902E]/15 text-[#E0B44A]">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#D6A13A]/15 text-[#D6A13A]">
                       <Icon size={19} aria-hidden="true" />
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-[#D7E2EA]/55">
+                      <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-[#A8B3C3]/55">
                         {label}
                       </span>
-                      <span className="block truncate text-[15px] font-medium text-[#EEF2F6]">
+                      <span className="block truncate text-[15px] font-medium text-[#F9FAFB]">
                         {value}
                       </span>
                     </span>
-                    <span className="inline-flex shrink-0 items-center gap-1 text-xs font-medium uppercase tracking-wider text-[#E0B44A]">
+                    <span className="inline-flex shrink-0 items-center gap-1 text-xs font-medium uppercase tracking-wider text-[#D6A13A]">
                       {action}
                       <ArrowUpRight
                         size={14}
@@ -147,7 +147,7 @@ export default function ContactPage() {
             </FadeIn>
 
             <FadeIn y={28} delay={0.08}>
-              <h2 className="mt-12 text-xs font-semibold uppercase tracking-[0.2em] text-white">
+              <h2 className="mt-12 text-xs font-semibold uppercase tracking-[0.2em] text-[#F9FAFB]">
                 What happens next
               </h2>
               <ol className="mt-5 flex flex-col">
@@ -157,18 +157,18 @@ export default function ContactPage() {
                     className={
                       "flex gap-5 py-5 " +
                       (i < NEXT_STEPS.length - 1
-                        ? "border-b border-[#D7E2EA]/10"
+                        ? "border-b border-[#374151]"
                         : "")
                     }
                   >
-                    <span className="font-display text-base font-semibold tracking-[0.14em] text-[#C6902E]">
+                    <span className="font-display text-base font-semibold tracking-[0.14em] text-[#D6A13A]">
                       {step.n}
                     </span>
                     <span>
-                      <span className="block font-medium text-[#EEF2F6]">
+                      <span className="block font-medium text-[#F9FAFB]">
                         {step.title}
                       </span>
-                      <span className="mt-1 block leading-relaxed text-[#D7E2EA]/70">
+                      <span className="mt-1 block leading-relaxed text-[#A8B3C3]/70">
                         {step.text}
                       </span>
                     </span>
@@ -180,11 +180,11 @@ export default function ContactPage() {
 
           {/* Right: the form */}
           <FadeIn y={32} delay={0.1}>
-            <div className="rounded-[28px] border border-[#D7E2EA]/15 bg-[#10141B] p-6 sm:rounded-[32px] sm:p-8">
-              <h2 className="font-display text-2xl font-semibold text-white">
+            <div className="rounded-[28px] border border-[#374151] bg-[#1F2937] p-6 sm:rounded-[32px] sm:p-8">
+              <h2 className="font-display text-2xl font-semibold text-[#F9FAFB]">
                 Send a message
               </h2>
-              <p className="mb-7 mt-2 leading-relaxed text-[#D7E2EA]/70">
+              <p className="mb-7 mt-2 leading-relaxed text-[#A8B3C3]/70">
                 Three fields, one minute. Your message comes straight to me —
                 no assistants, no ticket system.
               </p>

@@ -7,11 +7,23 @@
 
 /* Canonical CTA gold — single source of truth. Every primary/solid CTA
    (Hero, ContactButton, Footer submit, Services) draws from these. */
+/* Official palette — Deep Navy Charcoal + Muted Gold (single source of truth).
+   --bg #111827 · --navy #0F172A · --panel #1F2937 · --heading #F9FAFB
+   --body #A8B3C3 · --gold #D6A13A · --border #374151
+   (#1E293B is approved ONLY as the hero gradient highlight.) */
 :root {
-  --gold-gradient: linear-gradient(120deg, #c6902e 0%, #e0b44a 100%);
-  --gold-shadow: 0 8px 22px -8px rgba(198, 144, 46, 0.65);
-  --gold-solid: #c6902e;
-  --gold-solid-hover: #a47726;
+  --bg: #111827;
+  --navy: #0F172A;
+  --panel: #1F2937;
+  --heading: #F9FAFB;
+  --body: #A8B3C3;
+  --gold: #D6A13A;
+  --border: #374151;
+  /* Canonical CTA gold — every primary/solid CTA draws from these. */
+  --gold-gradient: #D6A13A;
+  --gold-shadow: 0 8px 22px -8px rgba(214, 161, 58, 0.55);
+  --gold-solid: #D6A13A;
+  --gold-solid-hover: #D6A13A;
 }
 
 *,
@@ -25,13 +37,13 @@
 html,
 body,
 #root {
-  background: #0c0c0c;
+  background: #111827;
   font-family: "Inter", sans-serif;
 }
 
 /* Gradient hero-style heading text. */
 .hero-heading {
-  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  background: linear-gradient(180deg, #A8B3C3 0%, #F9FAFB 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,10 +52,10 @@ body,
 
 /* Services list dividers — 1px, per spec. */
 .services-row {
-  border-top: 1px solid rgba(12, 12, 12, 0.15);
+  border-top: 1px solid #374151;
 }
 .services-row--last {
-  border-bottom: 1px solid rgba(12, 12, 12, 0.15);
+  border-bottom: 1px solid #374151;
 }
 
 /* Respect reduced-motion preferences. */

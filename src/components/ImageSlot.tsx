@@ -59,9 +59,9 @@ export default function ImageSlot({
       }
       style={{
         background:
-          "repeating-linear-gradient(45deg, #141414 0px, #141414 12px, #1b1b1b 12px, #1b1b1b 24px)",
-        border: "1px dashed rgba(215,226,234,0.25)",
-        color: "rgba(215,226,234,0.55)",
+          "repeating-linear-gradient(45deg, #111827 0px, #111827 12px, #1F2937 12px, #1F2937 24px)",
+        border: "1px dashed rgba(55,65,81,0.25)",
+        color: "rgba(55,65,81,0.55)",
         ...style,
       }}
       role="img"

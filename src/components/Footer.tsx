@@ -8,15 +8,15 @@ const LINKEDIN = "https://www.linkedin.com/in/naveed-aslam-dev";
 const WHATSAPP = "https://wa.me/923296136483";
 
 const contactButtonClass =
-  "inline-flex items-center gap-2 rounded-full border border-[rgba(215,226,234,0.35)] " +
-  "bg-[#0d0e11]/70 backdrop-blur-sm px-6 py-3 text-sm font-medium uppercase tracking-widest " +
-  "text-[#D7E2EA] shadow-[0_6px_20px_-8px_rgba(0,0,0,0.7)] transition-colors duration-200 " +
-  "hover:bg-[#D7E2EA] hover:text-[#0C0C0C] focus-visible:outline focus-visible:outline-2 " +
-  "focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]";
+  "inline-flex items-center gap-2 rounded-full border border-[#374151] " +
+  "bg-[#0F172A]/70 backdrop-blur-sm px-6 py-3 text-sm font-medium uppercase tracking-widest " +
+  "text-[#A8B3C3] shadow-[0_6px_20px_-8px_rgba(0,0,0,0.7)] transition-colors duration-200 " +
+  "hover:bg-[#A8B3C3] hover:text-[#111827] focus-visible:outline focus-visible:outline-2 " +
+  "focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative overflow-hidden bg-[#0C0C0C]">
+    <footer id="contact" className="relative overflow-hidden bg-[#111827]">
       {/* Background photo (anchored low) + dimming overlays */}
       <div
         className="pointer-events-none absolute inset-0 bg-cover bg-no-repeat"
@@ -26,12 +26,12 @@ export default function Footer() {
         }}
         aria-hidden="true"
       />
-      {/* less image, more dark: solid wash + bottom fade into pure #0C0C0C so the footer ends dark */}
+      {/* less image, more dark: solid wash + bottom fade into pure #111827 so the footer ends dark */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(12,12,12,0.66) 0%, rgba(12,12,12,0.52) 45%, rgba(12,12,12,0.9) 80%, #0C0C0C 100%)",
+            "linear-gradient(to bottom, rgba(17,24,39,0.66) 0%, rgba(17,24,39,0.52) 45%, rgba(17,24,39,0.9) 80%, #111827 100%)",
         }}
         aria-hidden="true"
       />
@@ -41,7 +41,7 @@ export default function Footer() {
         <FadeIn
           as="h2"
           y={60}
-          className="font-display text-[clamp(2.2rem,7vw,84px)] font-semibold leading-[1.05] tracking-tight text-[#EEF2F6]"
+          className="font-display text-[clamp(2.2rem,7vw,84px)] font-semibold leading-[1.05] tracking-tight text-[#F9FAFB]"
         >
           Tell me what you&apos;re building.
         </FadeIn>
@@ -50,7 +50,7 @@ export default function Footer() {
           as="p"
           delay={0.1}
           y={30}
-          className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#D7E2EA]/85 sm:text-lg"
+          className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#A8B3C3]/85 sm:text-lg"
         >
           Send me the problem on the contact page, or reach me directly —
           I&apos;ll reply within a day with an honest answer on whether I can
@@ -61,7 +61,7 @@ export default function Footer() {
         <FadeIn delay={0.16} y={20} className="mt-9">
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full px-10 py-4 text-sm font-medium uppercase tracking-widest text-[#0C0C0C] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E]"
+            className="inline-flex items-center gap-2 rounded-full px-10 py-4 text-sm font-medium uppercase tracking-widest text-[#111827] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6A13A]"
             style={{
               background: "var(--gold-gradient)",
               boxShadow: "var(--gold-shadow)",
@@ -100,13 +100,13 @@ export default function Footer() {
 
       {/* Bottom bar: copyright + back-to-top, grouped and centered */}
       <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-5 px-5 pb-10 sm:px-8">
-        <p className="text-xs text-[#D7E2EA]/60">
+        <p className="text-xs text-[#A8B3C3]/60">
           © {new Date().getFullYear()} Naveed Aslam. All rights reserved.
         </p>
         <a
           href="#hero"
           aria-label="Back to top"
-          className="inline-flex items-center justify-center rounded-full border border-[rgba(215,226,234,0.35)] bg-[#0d0e11]/70 text-[#D7E2EA] transition-all duration-200 hover:scale-[1.05] hover:bg-[#D7E2EA] hover:text-[#0C0C0C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="inline-flex items-center justify-center rounded-full border border-[#374151] bg-[#0F172A]/70 text-[#A8B3C3] transition-all duration-200 hover:scale-[1.05] hover:bg-[#A8B3C3] hover:text-[#111827] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           style={{ width: 48, height: 48 }}
         >
           <ArrowUp size={20} />
