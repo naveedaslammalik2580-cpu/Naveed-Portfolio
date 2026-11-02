@@ -3,7 +3,7 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const LINKS = [
   { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
+  { label: "Work", href: "/work" },
   { label: "Services", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
@@ -59,7 +59,7 @@ export default function StickyNav() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 md:px-10">
         <a
-          href="#home"
+          href="/"
           className="font-display text-sm font-bold uppercase tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C6902E] sm:text-base"
           style={{ color: "#C6902E" }}
         >

@@ -1,0 +1,3 @@
+# SPA fallback: serve the app for client-side routes such as /work.
+# Existing static files are still served first by Netlify.
+/* /index.html 200

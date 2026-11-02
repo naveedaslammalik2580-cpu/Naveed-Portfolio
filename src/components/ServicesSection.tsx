@@ -8,14 +8,14 @@ const SERVICES = [
     name: "A business website that actually does its job",
     desc: "Whether you don't have a website yet, or the one you have is slow, hard to use on a phone, or missing the things customers actually need — I build sites that load fast, look right on every screen, and make it easy for people to contact you or book with you. Custom-coded or WordPress, depending on what fits. Handed over so you can update text and add pages without emailing me every time.",
     linkLabel: "See business website projects",
-    href: "#work",
+    href: "/work#real-estate-calculators",
   },
   {
     n: "02",
     name: "Custom web apps & SaaS platforms",
     desc: "Full-stack builds from empty repo to live URL. Next.js, Node, PostgreSQL — multi-tenant architecture, authentication, role-based access, the parts that are tedious to get right. Best for founders who need real software shipped without hiring a team, and for businesses that have outgrown a marketing site.",
     linkLabel: "See software projects",
-    href: "#work",
+    href: "/work#tetramagnet",
   },
 ];
 

@@ -107,7 +107,7 @@ export default function ExpertiseSection() {
 
       <p className="mx-auto mt-12 max-w-6xl text-center sm:mt-16">
         <a
-          href="#work"
+          href="/work"
           className="text-sm font-medium uppercase tracking-wider text-[#C6902E] underline-offset-4 transition-opacity duration-200 hover:opacity-70 hover:underline"
         >
           See what I&apos;ve built with this

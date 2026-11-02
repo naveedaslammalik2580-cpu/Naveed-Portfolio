@@ -8,7 +8,7 @@ import HeroProductVisual from "./HeroProductVisual";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
+  { label: "Work", href: "/work" },
   { label: "Services", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
@@ -106,7 +106,7 @@ export default function HeroSection() {
               className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4"
             >
               <a
-                href="#work"
+                href="/work"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium uppercase tracking-wider text-[#0C0C0C] transition-transform duration-200 hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C6902E] motion-reduce:transform-none"
                 style={{
                   background: "var(--gold-gradient)",
