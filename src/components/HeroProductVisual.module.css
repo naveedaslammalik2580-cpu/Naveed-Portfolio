@@ -8,14 +8,14 @@
   pointer-events: none;
 }
 
-/* Stacking: ground 0 · globe 1 · connections 2 · secondary 3 · cards 4 */
+/* Stacking: ground 0 · globe 1 · connections 2 · cards 3 */
 .globe {
   position: absolute;
   z-index: 1;
-  width: 94%;
+  width: 96%;
   aspect-ratio: 1;
-  top: -10%;
-  right: -3%;
+  top: 2%;
+  right: 2%;
 }
 
 .connections {
@@ -34,7 +34,7 @@
 
 .capability {
   position: absolute;
-  z-index: 4;
+  z-index: 3;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -63,35 +63,19 @@
 .icon svg { width: 13px; height: 13px; stroke-width: 1.5; }
 .title { font-family: "Space Grotesk", sans-serif; font-size: 12.5px; font-weight: 700; line-height: 1.4; letter-spacing: .04em; color: #F3F4F6; }
 .description { margin-top: 2px; font-size: 11.5px; line-height: 1.55; color: #CBD5E1; }
-.applications { top: 6%; left: 11%; }
-.websites { top: 0; right: 2%; }
-.platforms { top: 26%; left: 4%; }
-.portals { top: 34%; right: 1%; }
+.applications { top: 9%; left: 5%; }
+.websites { top: 5%; right: 4%; }
+.platforms { top: 45%; left: 2%; }
+.portals { top: 49%; right: 2%; }
 
-.secondary { position: absolute; z-index: 3; width: 50%; right: 3%; bottom: 2%; opacity: .72; filter: saturate(.8) brightness(.9); }
-.browser {
-  overflow: hidden;
-  border: 1px solid #48505E;
-  border-top-color: rgba(212, 160, 55, .48);
-  border-radius: 10px;
-  background: #14161B;
-  box-shadow: 0 22px 48px rgba(0, 0, 0, .65), 0 0 24px rgba(212, 160, 55, .05);
-}
-.chrome { display: flex; align-items: center; gap: 10px; height: 27px; padding: 0 10px; border-bottom: 1px solid #48505E; background: linear-gradient(110deg, #1C2028, #1C2028); }
-.dots { display: flex; gap: 3px; }
-.dots i { width: 4px; height: 4px; border-radius: 50%; background: #48505E; }
-.dots i:first-child { background: rgba(212, 160, 55, .65); }
-.address { display: flex; align-items: center; gap: 5px; font-size: 8px; letter-spacing: .03em; color: #CBD5E1; }
-.browser img { display: block; width: 100%; height: auto; }
-.secondary .browser { border-color: #48505E; }
-.ground { position: absolute; z-index: 0; bottom: 1%; left: 22%; width: 80%; height: 20%; background: radial-gradient(ellipse, rgba(212, 160, 55, .09), transparent 68%); }
+.ground { position: absolute; z-index: 0; bottom: 1%; left: 10%; width: 80%; height: 20%; background: radial-gradient(ellipse, rgba(212, 160, 55, .09), transparent 68%); }
 
 @media (min-width: 640px) {
   .composition { max-width: 480px; }
 }
 
 @media (min-width: 1024px) {
-  /* Keep the previous globe's square layout footprint and the text's position. */
+  /* Keep the globe's square layout footprint and the text's position. */
   .composition { max-width: none; margin-top: 0; }
 }
 
@@ -101,26 +85,24 @@
   .icon svg { width: 12px; height: 12px; }
   .title { font-size: 11.5px; letter-spacing: .015em; }
   .description { font-size: 10.5px; }
-  .applications { top: 5%; }
-  .platforms { top: 24%; }
-  .portals { top: 28%; }
-  .chrome { height: 23px; padding: 0 7px; gap: 6px; }
+  .applications { top: 8%; }
+  .platforms { top: 44%; }
+  .portals { top: 48%; }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
-  .platforms, .portals, .secondary { display: none; }
+  .platforms, .portals { display: none; }
   .applications { top: 15%; }
   .websites { top: 5%; }
 }
 
 @media (min-width: 1024px) and (max-width: 1100px) {
-  .secondary { display: none; }
   .connections path { display: none; }
 }
 
 @media (max-width: 639px) {
   .composition { aspect-ratio: 1.15; }
-  .capabilities, .secondary { display: none; }
-  .globe { width: 90%; top: -8%; right: 0; }
+  .capabilities { display: none; }
+  .globe { width: 92%; top: 0; right: 4%; }
   .connections { opacity: .12; }
 }

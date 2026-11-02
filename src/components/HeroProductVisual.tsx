@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Code2, Layers3, PanelsTopLeft, LockKeyhole, Lock } from "lucide-react";
+import { Code2, Layers3, PanelsTopLeft, LockKeyhole } from "lucide-react";
 import styles from "./HeroProductVisual.module.css";
 
 const CAPABILITIES = [
@@ -9,7 +9,7 @@ const CAPABILITIES = [
   { title: "CLIENT PORTALS", description: "Secure and easy-to-use systems", icon: LockKeyhole, position: "portals" },
 ] as const;
 
-/** A contained product composition; never changes the approved text column. */
+/** A contained visual composition; never changes the approved text column. */
 export default function HeroProductVisual({ children }: { children: ReactNode }) {
   return (
     <div className={styles.composition}>
@@ -38,34 +38,7 @@ export default function HeroProductVisual({ children }: { children: ReactNode })
         ))}
       </ul>
 
-      <div className={styles.secondary}>
-        <BrowserFrame
-          src="/work/tetramagnet-features.webp"
-          alt="Outreach platform modules: lead pipeline, email sender, follow-up queue, team management, and campaigns"
-          label="Outreach / Modules"
-          width={1600}
-          height={728}
-        />
-      </div>
       <div className={styles.ground} aria-hidden="true" />
-    </div>
-  );
-}
-
-function BrowserFrame({ src, alt, label, width, height }: {
-  src: string;
-  alt: string;
-  label: string;
-  width: number;
-  height: number;
-}) {
-  return (
-    <div className={styles.browser}>
-      <div className={styles.chrome}>
-        <span className={styles.dots} aria-hidden="true"><i /><i /><i /></span>
-        <span className={styles.address}><Lock size={9} aria-hidden="true" />{label}</span>
-      </div>
-      <img src={src} alt={alt} width={width} height={height} decoding="async" draggable={false} />
     </div>
   );
 }
