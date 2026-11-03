@@ -27,6 +27,10 @@ export default function ServicesSection() {
     <section
       id="skills"
       className="bg-[#1C2028] rounded-t-[40px] px-5 py-20 sm:rounded-t-[50px] sm:px-8 sm:py-24 md:rounded-t-[60px] md:px-10 md:py-32"
+      style={{
+        background:
+          "radial-gradient(ellipse at 85% 15%, rgba(212,160,55,0.05) 0%, rgba(212,160,55,0.018) 35%, transparent 65%), #1C2028",
+      }}
     >
       <FadeIn
         as="h2"

@@ -19,7 +19,12 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative flex min-h-screen items-center px-5 py-20 sm:px-8 md:px-10"
+      className="relative flex items-center px-5 py-20 sm:px-8 md:px-10"
+      style={{
+        minHeight: "min(100vh, 56rem)",
+        background:
+          "radial-gradient(ellipse at 12% 30%, rgba(212,160,55,0.055) 0%, rgba(212,160,55,0.02) 35%, transparent 68%), #14161B",
+      }}
     >
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:gap-16">
         {/* Left: photo */}

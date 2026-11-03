@@ -21,8 +21,9 @@ export default function HeroSection() {
     <MotionConfig reducedMotion="user">
       <section
         id="home"
-        className="relative flex min-h-screen flex-col overflow-hidden bg-[#14161B]"
+        className="relative flex flex-col overflow-hidden bg-[#14161B]"
         style={{
+          minHeight: "min(100vh, 56rem)",
           background:
             "radial-gradient(ellipse at 78% 48%, rgba(212,160,55,0.11) 0%, rgba(212,160,55,0.035) 32%, transparent 62%), #14161B",
         }}

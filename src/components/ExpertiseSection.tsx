@@ -79,7 +79,13 @@ const EXPERTISE: Expertise[] = [
 
 export default function ExpertiseSection() {
   return (
-    <section className="bg-[#14161B] px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-32">
+    <section
+      className="px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-32"
+      style={{
+        background:
+          "radial-gradient(ellipse at 82% 35%, rgba(212,160,55,0.07) 0%, rgba(212,160,55,0.025) 35%, transparent 70%), #14161B",
+      }}
+    >
       <FadeIn
         as="h2"
         y={40}
@@ -93,7 +99,7 @@ export default function ExpertiseSection() {
         as="p"
         delay={0.1}
         y={24}
-        className="mx-auto mt-5 max-w-xl text-center font-normal leading-relaxed text-[#D1D5DB]/70 sm:mt-6"
+        className="mx-auto mt-5 max-w-xl text-center font-normal leading-relaxed text-[#D1D5DB] sm:mt-6"
         style={{ fontSize: "clamp(0.95rem, 1.8vw, 1.2rem)" }}
       >
         Three areas, not thirty — and the work behind each one.
@@ -122,7 +128,7 @@ function ExpertiseCard({ item, delay }: { item: Expertise; delay: number }) {
   const { Icon, title, description, tech } = item;
   return (
     <FadeIn delay={delay} y={30} className="h-full">
-      <div className="group flex h-full flex-col gap-6 rounded-[32px] border-2 border-[#48505E] bg-[#14161B] p-6 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-[var(--gold-solid)]/50 hover:shadow-[var(--gold-shadow)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:rounded-[36px] sm:p-7 md:p-8">
+      <div className="group flex h-full flex-col gap-6 rounded-[32px] border-2 border-[#48505E] bg-[#1C2028] p-6 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-[var(--gold-solid)]/50 hover:shadow-[var(--gold-shadow)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:rounded-[36px] sm:p-7 md:p-8">
         <Icon size={30} strokeWidth={1.5} style={{ color: "var(--gold-solid)" }} />
 
         <div className="flex flex-col gap-3">
@@ -134,7 +140,7 @@ function ExpertiseCard({ item, delay }: { item: Expertise; delay: number }) {
           </h3>
           <p
             className="font-light leading-relaxed text-[#D1D5DB]"
-            style={{ fontSize: "clamp(0.85rem, 1.4vw, 1rem)" }}
+            style={{ fontSize: "clamp(0.95rem, 1.4vw, 1rem)" }}
           >
             {description}
           </p>

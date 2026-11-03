@@ -72,7 +72,7 @@ export default function WorkPage() {
         className="pointer-events-none absolute inset-x-0 top-0 h-[560px]"
         style={{
           background:
-            "radial-gradient(ellipse at 88% 0%, #1C2028 0%, rgba(20,22,27,0) 62%)",
+            "radial-gradient(ellipse at 88% 0%, rgba(212,160,55,0.06) 0%, rgba(20,22,27,0) 62%)",
         }}
         aria-hidden="true"
       />

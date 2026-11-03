@@ -13,6 +13,10 @@ export default function ProjectsSection() {
     <section
       id="work"
       className="relative z-10 -mt-10 rounded-t-[40px] bg-[#14161B] px-5 pb-24 pt-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 md:-mt-14 md:rounded-t-[60px] md:px-10"
+      style={{
+        background:
+          "radial-gradient(ellipse at 18% 12%, rgba(212,160,55,0.06) 0%, rgba(212,160,55,0.022) 35%, transparent 70%), #14161B",
+      }}
     >
       <FadeIn
         as="h2"
