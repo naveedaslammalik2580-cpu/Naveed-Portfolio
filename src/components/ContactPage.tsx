@@ -73,7 +73,7 @@ export default function ContactPage() {
         <FadeIn
           as="p"
           y={16}
-          className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#D4A037] sm:text-sm"
+          className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.24em] text-[#D4A037] sm:text-sm"
         >
           Contact
         </FadeIn>
@@ -81,7 +81,7 @@ export default function ContactPage() {
         <FadeIn
           as="h1"
           y={32}
-          className="font-display max-w-3xl text-[clamp(2.4rem,6vw,4.7rem)] font-semibold leading-[1.04] tracking-tight text-[#F5F6F8]"
+          className="font-display mx-auto max-w-[850px] text-center text-[clamp(2.75rem,5vw,4.5rem)] font-semibold leading-[1.12] tracking-tight text-[#F5F6F8]"
         >
           Tell me what you&apos;re <span className="text-[#D4A037]">building.</span>
         </FadeIn>
@@ -90,21 +90,11 @@ export default function ContactPage() {
           as="p"
           delay={0.1}
           y={24}
-          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#D1D5DB] sm:text-lg"
+          className="mx-auto mt-6 max-w-[760px] text-center text-base font-normal leading-[1.6] text-[#D1D5DB] sm:text-lg"
         >
           Send me the problem — what&apos;s broken, what you need built, or what
           your data isn&apos;t telling you. I&apos;ll reply within a day with an
           honest answer on whether I can help and what it would take.
-        </FadeIn>
-
-        <FadeIn
-          as="p"
-          delay={0.16}
-          y={16}
-          className="mt-5 text-xs leading-relaxed text-[#CBD5E1] sm:text-sm"
-        >
-          Usually replies within 24 hours · Remote · Based in Pakistan, working
-          with clients worldwide
         </FadeIn>
 
         <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-14">
