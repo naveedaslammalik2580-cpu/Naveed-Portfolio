@@ -177,8 +177,8 @@ function Globe() {
         diffuse: 1.05,
         mapSamples: 16000,
         mapBrightness: 9.5,
-        baseColor: [0.09, 0.11, 0.15],
-        markerColor: [0.75, 0.85, 1],
+        baseColor: [0.13, 0.098, 0.058],
+        markerColor: [0.83, 0.63, 0.22],
         glowColor: [0.45, 0.4, 0.32],
         markers: [],
       });
