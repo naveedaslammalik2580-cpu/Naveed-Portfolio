@@ -81,7 +81,7 @@ export default function WorkPage() {
         <FadeIn
           as="p"
           y={16}
-          className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#D4A037] sm:text-sm"
+          className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.24em] text-[#D4A037] sm:text-sm"
         >
           Selected Work
         </FadeIn>
@@ -89,7 +89,7 @@ export default function WorkPage() {
         <FadeIn
           as="h1"
           y={32}
-          className="font-display max-w-3xl text-[clamp(2.4rem,6vw,4.7rem)] font-semibold leading-[1.04] tracking-tight text-[#F5F6F8]"
+          className="font-display mx-auto max-w-[980px] text-center text-[clamp(2.4rem,6vw,4.7rem)] font-semibold leading-[1.04] tracking-tight text-[#F5F6F8]"
         >
           Work that&apos;s live — <span className="text-[#D4A037]">and working.</span>
         </FadeIn>
@@ -98,7 +98,7 @@ export default function WorkPage() {
           as="p"
           delay={0.1}
           y={24}
-          className="mt-6 max-w-2xl text-base font-normal leading-relaxed text-[#D1D5DB] sm:text-lg"
+          className="mx-auto mt-6 max-w-[780px] text-center text-base font-normal leading-relaxed text-[#D1D5DB] sm:text-lg"
         >
           Real projects, shown one by one with their details and screenshots.
           Where a project is public, the button takes you to the actual product
@@ -106,7 +106,7 @@ export default function WorkPage() {
         </FadeIn>
 
         <FadeIn delay={0.18} y={20}>
-          <nav aria-label="Project index" className="mt-9 flex flex-wrap gap-2.5">
+          <nav aria-label="Project index" className="mx-auto mt-9 flex max-w-[1100px] flex-wrap justify-center gap-2.5">
             {PROJECTS.map((project) => (
               <a
                 key={project.slug}
